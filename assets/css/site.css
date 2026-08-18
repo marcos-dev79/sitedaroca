@@ -308,7 +308,7 @@ a:hover { text-decoration: underline; }
 }
 
 .map-disclaimer {
-  margin-top: 0.75rem;
+  margin-top: 0.95rem;
   font-size: 0.82rem;
   color: var(--muted);
   max-width: 720px;
