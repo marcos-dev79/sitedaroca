@@ -16,7 +16,7 @@ SITE_DESC = (
     "Estratégia para devs remotos morarem no interior: 150 cidadezinhas "
     "com infraestrutura básica, segurança e proximidade de centros urbanos."
 )
-SITE_URL = ""  # preencher após deploy, ex: https://seuusuario.github.io/roca-remoto
+SITE_URL = "https://marcos-dev79.github.io/sitedaroca/"  # preencher após deploy, ex: https://seuusuario.github.io/roca-remoto
 
 
 def load_cities():
