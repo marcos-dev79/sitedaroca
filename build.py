@@ -88,6 +88,7 @@ def build_index(stats: dict) -> str:
       <span class="stat">NE: {stats["ne"]}</span>
       <span class="stat">N: {stats["n"]}</span>
     </div>
+    <p class="map-disclaimer">Isto não é um conselho profissional. Faça sua própria pesquisa.</p>
   </header>
 
   <div class="map-wrap">

@@ -307,6 +307,13 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--border);
 }
 
+.map-disclaimer {
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  max-width: 720px;
+}
+
 #map {
   height: calc(100vh - 200px);
   min-height: 420px;
