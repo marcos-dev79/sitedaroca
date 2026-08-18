@@ -13,7 +13,7 @@ ASSETS = ROOT / "assets"
 
 SITE_NAME = "Dev Remoto na Roça"
 SITE_DESC = (
-    "Estratégia para devs remotos morarem no interior: 150 cidadezinhas "
+    "Estratégia para devs remotos morarem no interior: cidadezinhas "
     "com infraestrutura básica, segurança e proximidade de centros urbanos."
 )
 SITE_URL = "https://marcos-dev79.github.io/sitedaroca/"  # preencher após deploy, ex: https://seuusuario.github.io/roca-remoto
@@ -50,9 +50,9 @@ def head(title: str, desc: str = SITE_DESC, page: str = "index") -> str:
   <link rel="stylesheet" href="assets/css/site.css">"""
 
 
-def footer() -> str:
+def footer(total: int) -> str:
     return f"""<footer class="site-footer">
-  <p>{SITE_NAME} · Dados: IBGE 2024, IPS Brasil · Mapa interativo com 150 municípios</p>
+  <p>{SITE_NAME} · Dados: IBGE 2024, Atlas IDH 2010 · Mapa interativo com {total} municípios</p>
 </footer>"""
 
 
@@ -103,7 +103,7 @@ def build_index(stats: dict) -> str:
     </div>
   </div>
 
-  {footer()}
+  {footer(stats["total"])}
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script src="assets/js/mapa.js"></script>
 </body>
@@ -123,7 +123,7 @@ def build_404() -> str:
     <p>Esta página não existe.</p>
     <a href="index.html" class="btn btn-primary">Voltar ao início</a>
   </div>
-  {footer()}
+  {footer(stats["total"])}
 </body>
 </html>"""
 
