@@ -16,7 +16,7 @@ SITE_DESC = (
     "Estratégia para devs remotos morarem no interior: cidadezinhas "
     "com infraestrutura básica, segurança e proximidade de centros urbanos."
 )
-SITE_URL = "https://marcos-dev79.github.io/sitedaroca/"  # preencher após deploy, ex: https://seuusuario.github.io/roca-remoto
+SITE_URL = "https://marcos-dev79.github.io/sitedaroca"
 
 
 def load_cities():
@@ -50,14 +50,20 @@ def head(title: str, desc: str = SITE_DESC, page: str = "index") -> str:
   <link rel="stylesheet" href="assets/css/site.css">"""
 
 
+def cities_script(cities: list) -> str:
+    payload = json.dumps(cities, ensure_ascii=False, separators=(",", ":"))
+    payload = payload.replace("<", "\\u003c").replace(">", "\\u003e")
+    return f"<script>window.CIDADEZINHAS={payload};</script>"
+
+
 def footer(total: int) -> str:
     return f"""<footer class="site-footer">
   <p>{SITE_NAME} · Dados: IBGE 2024, Atlas IDH 2010 · Mapa interativo com {total} municípios</p>
 </footer>"""
 
 
-def build_index(stats: dict) -> str:
-    return f"""<!DOCTYPE html>
+def build_index(stats: dict, cities: list) -> str:
+    html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   {head(SITE_NAME, page="index")}
@@ -105,9 +111,11 @@ def build_index(stats: dict) -> str:
 
   {footer(stats["total"])}
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  __CITIES_SCRIPT__
   <script src="assets/js/mapa.js"></script>
 </body>
 </html>"""
+    return html.replace("__CITIES_SCRIPT__", cities_script(cities))
 
 
 def build_404(total: int) -> str:
@@ -162,7 +170,7 @@ def main():
         shutil.copy2(img_sp, DIST / "assets" / "img" / "cidades-sp-100.png")
     shutil.copy2(DATA_SRC, DIST / "data" / "cidadezinhas.json")
 
-    (DIST / "index.html").write_text(build_index(stats), encoding="utf-8")
+    (DIST / "index.html").write_text(build_index(stats, cities), encoding="utf-8")
     (DIST / "404.html").write_text(build_404(stats["total"]), encoding="utf-8")
     (DIST / ".nojekyll").touch()
     (DIST / "robots.txt").write_text("User-agent: *\nAllow: /\n", encoding="utf-8")

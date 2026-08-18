@@ -39,7 +39,9 @@ function renderMarkers(query = "") {
   if (!markersLayer) return;
   markersLayer.clearLayers();
   const filtered = allCities.filter((c) => matchesFilter(c, query));
+  let plotted = 0;
   for (const c of filtered) {
+    if (typeof c.lat !== "number" || typeof c.lng !== "number") continue;
     L.circleMarker([c.lat, c.lng], {
       radius: 7,
       fillColor: REGIAO_CORES[c.regiao] || "#64748b",
@@ -49,9 +51,10 @@ function renderMarkers(query = "") {
     })
       .bindPopup(popupHtml(c))
       .addTo(markersLayer);
+    plotted += 1;
   }
   const el = document.getElementById("visible-count");
-  if (el) el.textContent = filtered.length;
+  if (el) el.textContent = plotted;
 }
 
 function setupFilters() {
@@ -72,13 +75,20 @@ function setupFilters() {
   });
 }
 
+async function loadCities() {
+  if (Array.isArray(window.CIDADEZINHAS) && window.CIDADEZINHAS.length) {
+    return window.CIDADEZINHAS;
+  }
+  const res = await fetch(`data/cidadezinhas.json?v=${Date.now()}`, { cache: "no-store" });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const payload = await res.json();
+  return payload.cidadezinhas || [];
+}
+
 async function initMap() {
   const loading = document.getElementById("map-loading");
   try {
-    const res = await fetch("data/cidadezinhas.json");
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const payload = await res.json();
-    allCities = payload.cidadezinhas || [];
+    allCities = await loadCities();
 
     map = L.map("map", { center: [-15.5, -52.0], zoom: 4, minZoom: 3 });
     L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
