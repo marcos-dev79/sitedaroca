@@ -12,9 +12,14 @@ let allCities = [];
 let activeRegiao = "all";
 
 function popupHtml(c) {
+  const idh =
+    typeof c.idh === "number"
+      ? `IDH ${c.idh.toFixed(3)} (Atlas 2010)<br>`
+      : "";
   return (
     `<b>#${c.rank} — ${c.nome}/${c.uf}</b><br>` +
     `Pop.: ~${c.pop.toLocaleString("pt-BR")} hab. | ${c.regiao}<br>` +
+    idh +
     `Cidade média: ${c.cidade_media}<br>` +
     `Grande centro: ${c.grande_centro}<br>` +
     `<em>${c.nota}</em>`

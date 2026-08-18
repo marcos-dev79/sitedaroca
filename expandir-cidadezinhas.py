@@ -258,6 +258,7 @@ def to_entry(city: dict, rank: int) -> dict:
         "uf": city["uf"],
         "regiao": city["regiao"],
         "pop": city["pop"],
+        "idh": round(city["idhm"], 3),
         "lat": round(city["lat"], 3),
         "lng": round(city["lng"], 3),
         "cidade_media": f"{medium_name} ({fmt_distance(city['medium_km'])})",

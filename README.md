@@ -1,82 +1,86 @@
 # Dev Remoto na Roça
 
-Site estático com guia para desenvolvedores remotos morarem no interior do Brasil, incluindo mapa interativo com **150 cidadezinhas**.
+Mapa interativo com **300 cidadezinhas** do Brasil para quem trabalha remoto e quer morar no interior.
+
+Site: [https://marcos-dev79.github.io/sitedaroca/](https://marcos-dev79.github.io/sitedaroca/)
+
+Isto **não é um conselho profissional**. Faça sua própria pesquisa e valide no local.
+
+## Critérios
+
+- Até ~15 mil habitantes (IBGE 2024)
+- Até 50 km de uma cidade média (80–300 mil hab.)
+- Até ~2 h de um grande centro (≥400 mil hab. ou capital)
+- Preferência por melhores índices de IDH (Atlas 2010)
+- UPA, escola, farmácia, mercado e açougue (validar no local)
+
+Distribuição atual: **185** Sul/Sudeste · **65** Centro-Oeste · **44** Nordeste · **6** Norte.
 
 ## Estrutura
 
 ```
 ROCA/
-├── assets/          # CSS e JS fonte
-├── data/            # JSON com as 150 cidadezinhas
-├── dist/            # Site pronto para publicação (gerado pelo build)
-├── build.py         # Script de build
-└── README.md
+├── assets/                  # CSS, JS e imagens fonte
+├── data/
+│   └── cidadezinhas.json    # 300 municípios do mapa
+├── dist/                    # Site gerado (não versionar)
+├── build.py                 # Gera dist/ para publicação
+├── expandir-cidadezinhas.py # Adiciona nova leva de municípios
+├── enriquecer-originais.py  # Completa IDH e notas das cidades
+└── .github/workflows/deploy.yml
 ```
 
 ## Build local
 
 ```bash
 python3 build.py
-```
-
-Abra `dist/index.html` no navegador ou sirva localmente:
-
-```bash
 cd dist && python3 -m http.server 8080
-# http://localhost:8080
 ```
 
-> O mapa carrega `data/cidadezinhas.json` via fetch — precisa de servidor HTTP (não funciona abrindo o HTML direto do disco em alguns navegadores).
+Abra [http://localhost:8080](http://localhost:8080).
+
+O mapa carrega `data/cidadezinhas.json` via fetch — precisa de servidor HTTP (não abra o HTML direto do disco).
 
 ## Publicação
 
-A pasta **`dist/`** é o artefato final. Faça upload dela ou configure o host para publicar seu conteúdo.
+A pasta **`dist/`** é o artefato final. O GitHub Actions gera ela no CI.
 
 ### GitHub Pages
 
-1. Crie um repositório e envie o projeto
-2. Em **Settings → Pages**, escolha **GitHub Actions** ou publique a branch `gh-pages` com o conteúdo de `dist/`
+O workflow `.github/workflows/deploy.yml` já está configurado:
 
-Workflow sugerido (`.github/workflows/deploy.yml`):
+1. Push em `main` (ou `master`)
+2. Em **Settings → Pages**, source = **GitHub Actions**
 
-```yaml
-name: Deploy site
-on:
-  push:
-    branches: [main]
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: python3 build.py
-      - uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: dist
-```
+O build roda `python3 build.py` e publica `dist/`.
 
-Se o site ficar em `https://usuario.github.io/ROCA/`, edite `SITE_URL` em `build.py` e rode o build de novo.
+Se a URL do site mudar, edite `SITE_URL` em `build.py`.
 
 ### Netlify
 
-1. Conecte o repositório
-2. **Build command:** `python3 build.py`
-3. **Publish directory:** `dist`
-
-Ou arraste a pasta `dist/` em [app.netlify.com/drop](https://app.netlify.com/drop).
+- **Build command:** `python3 build.py`
+- **Publish directory:** `dist`
 
 ### Cloudflare Pages
 
-- Build command: `python3 build.py`
-- Output directory: `dist`
+- **Build command:** `python3 build.py`
+- **Output directory:** `dist`
 
 ## Editar conteúdo
 
-- **Cidadezinhas:** edite `data/cidadezinhas.json` e rode `python3 build.py`
-- **Artigo:** edite a função `build_index()` em `build.py`
+- **Cidades do mapa:** `data/cidadezinhas.json`, depois `python3 build.py`
+- **Layout do mapa:** `build.py` (`build_index()`)
 - **Estilo:** `assets/css/site.css`
-- **Mapa:** `assets/js/mapa.js`
+- **Mapa (Leaflet, filtros, popup):** `assets/js/mapa.js`
+
+Scripts opcionais (não rodam no CI):
+
+```bash
+python3 expandir-cidadezinhas.py      # nova leva de cidades (use --force se o dataset já tiver 300)
+python3 enriquecer-originais.py       # IDH + notas no padrão da expansão
+python3 gerar-imagem-sp.py            # PNG estático com 100 cidades de SP
+```
 
 ## Licença
 
-Conteúdo e dados compilados para uso informativo. Valide sempre no local antes de decidir morar em qualquer município.
+Conteúdo e dados compilados para uso informativo. População, UPA, IDH e infraestrutura mudam — valide sempre no local antes de decidir.

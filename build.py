@@ -110,7 +110,7 @@ def build_index(stats: dict) -> str:
 </html>"""
 
 
-def build_404() -> str:
+def build_404(total: int) -> str:
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -123,7 +123,7 @@ def build_404() -> str:
     <p>Esta página não existe.</p>
     <a href="index.html" class="btn btn-primary">Voltar ao início</a>
   </div>
-  {footer(stats["total"])}
+  {footer(total)}
 </body>
 </html>"""
 
@@ -163,7 +163,7 @@ def main():
     shutil.copy2(DATA_SRC, DIST / "data" / "cidadezinhas.json")
 
     (DIST / "index.html").write_text(build_index(stats), encoding="utf-8")
-    (DIST / "404.html").write_text(build_404(), encoding="utf-8")
+    (DIST / "404.html").write_text(build_404(stats["total"]), encoding="utf-8")
     (DIST / ".nojekyll").touch()
     (DIST / "robots.txt").write_text("User-agent: *\nAllow: /\n", encoding="utf-8")
 
