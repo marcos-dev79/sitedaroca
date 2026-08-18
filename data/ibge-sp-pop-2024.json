@@ -1,0 +1,2582 @@
+[
+  {
+    "nome": "Adamantina",
+    "pop": 35642
+  },
+  {
+    "nome": "Adolfo",
+    "pop": 4478
+  },
+  {
+    "nome": "Aguaí",
+    "pop": 32888
+  },
+  {
+    "nome": "Águas da Prata",
+    "pop": 7470
+  },
+  {
+    "nome": "Águas de Lindóia",
+    "pop": 18245
+  },
+  {
+    "nome": "Águas de Santa Bárbara",
+    "pop": 7407
+  },
+  {
+    "nome": "Águas de São Pedro",
+    "pop": 2829
+  },
+  {
+    "nome": "Agudos",
+    "pop": 38879
+  },
+  {
+    "nome": "Alambari",
+    "pop": 6330
+  },
+  {
+    "nome": "Alfredo Marcondes",
+    "pop": 4556
+  },
+  {
+    "nome": "Altair",
+    "pop": 3479
+  },
+  {
+    "nome": "Altinópolis",
+    "pop": 17156
+  },
+  {
+    "nome": "Alto Alegre",
+    "pop": 3883
+  },
+  {
+    "nome": "Alumínio",
+    "pop": 17591
+  },
+  {
+    "nome": "Álvares Florence",
+    "pop": 3978
+  },
+  {
+    "nome": "Álvares Machado",
+    "pop": 28250
+  },
+  {
+    "nome": "Álvaro de Carvalho",
+    "pop": 4896
+  },
+  {
+    "nome": "Alvinlândia",
+    "pop": 2923
+  },
+  {
+    "nome": "Americana",
+    "pop": 246655
+  },
+  {
+    "nome": "Américo Brasiliense",
+    "pop": 33757
+  },
+  {
+    "nome": "Américo de Campos",
+    "pop": 5975
+  },
+  {
+    "nome": "Amparo",
+    "pop": 69717
+  },
+  {
+    "nome": "Analândia",
+    "pop": 4684
+  },
+  {
+    "nome": "Andradina",
+    "pop": 61473
+  },
+  {
+    "nome": "Angatuba",
+    "pop": 24512
+  },
+  {
+    "nome": "Anhembi",
+    "pop": 5766
+  },
+  {
+    "nome": "Anhumas",
+    "pop": 4108
+  },
+  {
+    "nome": "Aparecida",
+    "pop": 33223
+  },
+  {
+    "nome": "Aparecida d'Oeste",
+    "pop": 4124
+  },
+  {
+    "nome": "Apiaí",
+    "pop": 24886
+  },
+  {
+    "nome": "Araçariguama",
+    "pop": 22168
+  },
+  {
+    "nome": "Araçatuba",
+    "pop": 207775
+  },
+  {
+    "nome": "Araçoiaba da Serra",
+    "pop": 33656
+  },
+  {
+    "nome": "Aramina",
+    "pop": 5526
+  },
+  {
+    "nome": "Arandu",
+    "pop": 7050
+  },
+  {
+    "nome": "Arapeí",
+    "pop": 2355
+  },
+  {
+    "nome": "Araraquara",
+    "pop": 252318
+  },
+  {
+    "nome": "Araras",
+    "pop": 135331
+  },
+  {
+    "nome": "Arco-Íris",
+    "pop": 2085
+  },
+  {
+    "nome": "Arealva",
+    "pop": 8280
+  },
+  {
+    "nome": "Areias",
+    "pop": 3625
+  },
+  {
+    "nome": "Areiópolis",
+    "pop": 10257
+  },
+  {
+    "nome": "Ariranha",
+    "pop": 7653
+  },
+  {
+    "nome": "Artur Nogueira",
+    "pop": 53157
+  },
+  {
+    "nome": "Arujá",
+    "pop": 89943
+  },
+  {
+    "nome": "Aspásia",
+    "pop": 1873
+  },
+  {
+    "nome": "Assis",
+    "pop": 104642
+  },
+  {
+    "nome": "Atibaia",
+    "pop": 166043
+  },
+  {
+    "nome": "Auriflama",
+    "pop": 13873
+  },
+  {
+    "nome": "Avaí",
+    "pop": 4519
+  },
+  {
+    "nome": "Avanhandava",
+    "pop": 11438
+  },
+  {
+    "nome": "Avaré",
+    "pop": 96098
+  },
+  {
+    "nome": "Bady Bassitt",
+    "pop": 28909
+  },
+  {
+    "nome": "Balbinos",
+    "pop": 3963
+  },
+  {
+    "nome": "Bálsamo",
+    "pop": 9854
+  },
+  {
+    "nome": "Bananal",
+    "pop": 10109
+  },
+  {
+    "nome": "Barão de Antonina",
+    "pop": 3618
+  },
+  {
+    "nome": "Barbosa",
+    "pop": 5659
+  },
+  {
+    "nome": "Bariri",
+    "pop": 32405
+  },
+  {
+    "nome": "Barra Bonita",
+    "pop": 35159
+  },
+  {
+    "nome": "Barra do Chapéu",
+    "pop": 5256
+  },
+  {
+    "nome": "Barra do Turvo",
+    "pop": 6922
+  },
+  {
+    "nome": "Barretos",
+    "pop": 126600
+  },
+  {
+    "nome": "Barrinha",
+    "pop": 33181
+  },
+  {
+    "nome": "Barueri",
+    "pop": 330339
+  },
+  {
+    "nome": "Bastos",
+    "pop": 21900
+  },
+  {
+    "nome": "Batatais",
+    "pop": 59873
+  },
+  {
+    "nome": "Bauru",
+    "pop": 391740
+  },
+  {
+    "nome": "Bebedouro",
+    "pop": 78210
+  },
+  {
+    "nome": "Bento de Abreu",
+    "pop": 2642
+  },
+  {
+    "nome": "Bernardino de Campos",
+    "pop": 11852
+  },
+  {
+    "nome": "Bertioga",
+    "pop": 66873
+  },
+  {
+    "nome": "Bilac",
+    "pop": 7455
+  },
+  {
+    "nome": "Birigui",
+    "pop": 122988
+  },
+  {
+    "nome": "Biritiba Mirim",
+    "pop": 30526
+  },
+  {
+    "nome": "Boa Esperança do Sul",
+    "pop": 13135
+  },
+  {
+    "nome": "Bocaina",
+    "pop": 11467
+  },
+  {
+    "nome": "Bofete",
+    "pop": 10688
+  },
+  {
+    "nome": "Boituva",
+    "pop": 63415
+  },
+  {
+    "nome": "Bom Jesus dos Perdões",
+    "pop": 22501
+  },
+  {
+    "nome": "Bom Sucesso de Itararé",
+    "pop": 3610
+  },
+  {
+    "nome": "Borá",
+    "pop": 928
+  },
+  {
+    "nome": "Boracéia",
+    "pop": 4823
+  },
+  {
+    "nome": "Borborema",
+    "pop": 14415
+  },
+  {
+    "nome": "Borebi",
+    "pop": 2787
+  },
+  {
+    "nome": "Botucatu",
+    "pop": 150442
+  },
+  {
+    "nome": "Bragança Paulista",
+    "pop": 184634
+  },
+  {
+    "nome": "Braúna",
+    "pop": 5466
+  },
+  {
+    "nome": "Brejo Alegre",
+    "pop": 2605
+  },
+  {
+    "nome": "Brodowski",
+    "pop": 26167
+  },
+  {
+    "nome": "Brotas",
+    "pop": 24423
+  },
+  {
+    "nome": "Buri",
+    "pop": 20674
+  },
+  {
+    "nome": "Buritama",
+    "pop": 17597
+  },
+  {
+    "nome": "Buritizal",
+    "pop": 4447
+  },
+  {
+    "nome": "Cabrália Paulista",
+    "pop": 4362
+  },
+  {
+    "nome": "Cabreúva",
+    "pop": 48473
+  },
+  {
+    "nome": "Caçapava",
+    "pop": 99678
+  },
+  {
+    "nome": "Cachoeira Paulista",
+    "pop": 32482
+  },
+  {
+    "nome": "Caconde",
+    "pop": 17266
+  },
+  {
+    "nome": "Cafelândia",
+    "pop": 16905
+  },
+  {
+    "nome": "Caiabu",
+    "pop": 3745
+  },
+  {
+    "nome": "Caieiras",
+    "pop": 98257
+  },
+  {
+    "nome": "Caiuá",
+    "pop": 5585
+  },
+  {
+    "nome": "Cajamar",
+    "pop": 97363
+  },
+  {
+    "nome": "Cajati",
+    "pop": 29257
+  },
+  {
+    "nome": "Cajobi",
+    "pop": 9232
+  },
+  {
+    "nome": "Cajuru",
+    "pop": 24217
+  },
+  {
+    "nome": "Campina do Monte Alegre",
+    "pop": 6077
+  },
+  {
+    "nome": "Campinas",
+    "pop": 1185977
+  },
+  {
+    "nome": "Campo Limpo Paulista",
+    "pop": 79663
+  },
+  {
+    "nome": "Campos do Jordão",
+    "pop": 47983
+  },
+  {
+    "nome": "Campos Novos Paulista",
+    "pop": 4991
+  },
+  {
+    "nome": "Cananéia",
+    "pop": 12489
+  },
+  {
+    "nome": "Canas",
+    "pop": 5049
+  },
+  {
+    "nome": "Cândido Mota",
+    "pop": 30172
+  },
+  {
+    "nome": "Cândido Rodrigues",
+    "pop": 2951
+  },
+  {
+    "nome": "Canitar",
+    "pop": 6524
+  },
+  {
+    "nome": "Capão Bonito",
+    "pop": 47403
+  },
+  {
+    "nome": "Capela do Alto",
+    "pop": 23597
+  },
+  {
+    "nome": "Capivari",
+    "pop": 51318
+  },
+  {
+    "nome": "Caraguatatuba",
+    "pop": 141084
+  },
+  {
+    "nome": "Carapicuíba",
+    "pop": 398462
+  },
+  {
+    "nome": "Cardoso",
+    "pop": 11491
+  },
+  {
+    "nome": "Casa Branca",
+    "pop": 28786
+  },
+  {
+    "nome": "Cássia dos Coqueiros",
+    "pop": 2855
+  },
+  {
+    "nome": "Castilho",
+    "pop": 20418
+  },
+  {
+    "nome": "Catanduva",
+    "pop": 119172
+  },
+  {
+    "nome": "Catiguá",
+    "pop": 7105
+  },
+  {
+    "nome": "Cedral",
+    "pop": 13160
+  },
+  {
+    "nome": "Cerqueira César",
+    "pop": 22076
+  },
+  {
+    "nome": "Cerquilho",
+    "pop": 46217
+  },
+  {
+    "nome": "Cesário Lange",
+    "pop": 19588
+  },
+  {
+    "nome": "Charqueada",
+    "pop": 15798
+  },
+  {
+    "nome": "Clementina",
+    "pop": 7087
+  },
+  {
+    "nome": "Colina",
+    "pop": 18842
+  },
+  {
+    "nome": "Colômbia",
+    "pop": 6781
+  },
+  {
+    "nome": "Conchal",
+    "pop": 29034
+  },
+  {
+    "nome": "Conchas",
+    "pop": 15381
+  },
+  {
+    "nome": "Cordeirópolis",
+    "pop": 25130
+  },
+  {
+    "nome": "Coroados",
+    "pop": 5498
+  },
+  {
+    "nome": "Coronel Macedo",
+    "pop": 4295
+  },
+  {
+    "nome": "Corumbataí",
+    "pop": 4285
+  },
+  {
+    "nome": "Cosmópolis",
+    "pop": 61204
+  },
+  {
+    "nome": "Cosmorama",
+    "pop": 8968
+  },
+  {
+    "nome": "Cotia",
+    "pop": 287004
+  },
+  {
+    "nome": "Cravinhos",
+    "pop": 34252
+  },
+  {
+    "nome": "Cristais Paulista",
+    "pop": 9543
+  },
+  {
+    "nome": "Cruzália",
+    "pop": 2129
+  },
+  {
+    "nome": "Cruzeiro",
+    "pop": 76513
+  },
+  {
+    "nome": "Cubatão",
+    "pop": 115082
+  },
+  {
+    "nome": "Cunha",
+    "pop": 22456
+  },
+  {
+    "nome": "Descalvado",
+    "pop": 32622
+  },
+  {
+    "nome": "Diadema",
+    "pop": 404118
+  },
+  {
+    "nome": "Dirce Reis",
+    "pop": 1641
+  },
+  {
+    "nome": "Divinolândia",
+    "pop": 11314
+  },
+  {
+    "nome": "Dobrada",
+    "pop": 8958
+  },
+  {
+    "nome": "Dois Córregos",
+    "pop": 24855
+  },
+  {
+    "nome": "Dolcinópolis",
+    "pop": 2250
+  },
+  {
+    "nome": "Dourado",
+    "pop": 8186
+  },
+  {
+    "nome": "Dracena",
+    "pop": 46664
+  },
+  {
+    "nome": "Duartina",
+    "pop": 12529
+  },
+  {
+    "nome": "Dumont",
+    "pop": 9719
+  },
+  {
+    "nome": "Echaporã",
+    "pop": 6295
+  },
+  {
+    "nome": "Eldorado",
+    "pop": 13162
+  },
+  {
+    "nome": "Elias Fausto",
+    "pop": 18103
+  },
+  {
+    "nome": "Elisiário",
+    "pop": 3189
+  },
+  {
+    "nome": "Embaúba",
+    "pop": 2353
+  },
+  {
+    "nome": "Embu das Artes",
+    "pop": 259323
+  },
+  {
+    "nome": "Embu-Guaçu",
+    "pop": 68805
+  },
+  {
+    "nome": "Emilianópolis",
+    "pop": 3062
+  },
+  {
+    "nome": "Engenheiro Coelho",
+    "pop": 20139
+  },
+  {
+    "nome": "Espírito Santo do Pinhal",
+    "pop": 40681
+  },
+  {
+    "nome": "Espírito Santo do Turvo",
+    "pop": 4217
+  },
+  {
+    "nome": "Estrela d'Oeste",
+    "pop": 9655
+  },
+  {
+    "nome": "Estrela do Norte",
+    "pop": 2749
+  },
+  {
+    "nome": "Euclides da Cunha Paulista",
+    "pop": 7928
+  },
+  {
+    "nome": "Fartura",
+    "pop": 16984
+  },
+  {
+    "nome": "Fernandópolis",
+    "pop": 73286
+  },
+  {
+    "nome": "Fernando Prestes",
+    "pop": 6066
+  },
+  {
+    "nome": "Fernão",
+    "pop": 1689
+  },
+  {
+    "nome": "Ferraz de Vasconcelos",
+    "pop": 185622
+  },
+  {
+    "nome": "Flora Rica",
+    "pop": 1492
+  },
+  {
+    "nome": "Floreal",
+    "pop": 2756
+  },
+  {
+    "nome": "Flórida Paulista",
+    "pop": 13171
+  },
+  {
+    "nome": "Florínea",
+    "pop": 3987
+  },
+  {
+    "nome": "Franca",
+    "pop": 364331
+  },
+  {
+    "nome": "Francisco Morato",
+    "pop": 171107
+  },
+  {
+    "nome": "Franco da Rocha",
+    "pop": 149786
+  },
+  {
+    "nome": "Gabriel Monteiro",
+    "pop": 2811
+  },
+  {
+    "nome": "Gália",
+    "pop": 6435
+  },
+  {
+    "nome": "Garça",
+    "pop": 43115
+  },
+  {
+    "nome": "Gastão Vidigal",
+    "pop": 3235
+  },
+  {
+    "nome": "Gavião Peixoto",
+    "pop": 4797
+  },
+  {
+    "nome": "General Salgado",
+    "pop": 10449
+  },
+  {
+    "nome": "Getulina",
+    "pop": 10355
+  },
+  {
+    "nome": "Glicério",
+    "pop": 4173
+  },
+  {
+    "nome": "Guaiçara",
+    "pop": 11459
+  },
+  {
+    "nome": "Guaimbê",
+    "pop": 5606
+  },
+  {
+    "nome": "Guaíra",
+    "pop": 40424
+  },
+  {
+    "nome": "Guapiaçu",
+    "pop": 22316
+  },
+  {
+    "nome": "Guapiara",
+    "pop": 17256
+  },
+  {
+    "nome": "Guará",
+    "pop": 18790
+  },
+  {
+    "nome": "Guaraçaí",
+    "pop": 7486
+  },
+  {
+    "nome": "Guaraci",
+    "pop": 10542
+  },
+  {
+    "nome": "Guarani d'Oeste",
+    "pop": 1999
+  },
+  {
+    "nome": "Guarantã",
+    "pop": 6531
+  },
+  {
+    "nome": "Guararapes",
+    "pop": 31872
+  },
+  {
+    "nome": "Guararema",
+    "pop": 32436
+  },
+  {
+    "nome": "Guaratinguetá",
+    "pop": 121710
+  },
+  {
+    "nome": "Guareí",
+    "pop": 15268
+  },
+  {
+    "nome": "Guariba",
+    "pop": 38609
+  },
+  {
+    "nome": "Guarujá",
+    "pop": 294973
+  },
+  {
+    "nome": "Guarulhos",
+    "pop": 1345364
+  },
+  {
+    "nome": "Guatapará",
+    "pop": 7462
+  },
+  {
+    "nome": "Guzolândia",
+    "pop": 4276
+  },
+  {
+    "nome": "Herculândia",
+    "pop": 9302
+  },
+  {
+    "nome": "Holambra",
+    "pop": 15596
+  },
+  {
+    "nome": "Hortolândia",
+    "pop": 247331
+  },
+  {
+    "nome": "Iacanga",
+    "pop": 10633
+  },
+  {
+    "nome": "Iacri",
+    "pop": 6207
+  },
+  {
+    "nome": "Iaras",
+    "pop": 8257
+  },
+  {
+    "nome": "Ibaté",
+    "pop": 33110
+  },
+  {
+    "nome": "Ibirá",
+    "pop": 11934
+  },
+  {
+    "nome": "Ibirarema",
+    "pop": 6461
+  },
+  {
+    "nome": "Ibitinga",
+    "pop": 61908
+  },
+  {
+    "nome": "Ibiúna",
+    "pop": 77651
+  },
+  {
+    "nome": "Icém",
+    "pop": 7969
+  },
+  {
+    "nome": "Iepê",
+    "pop": 7739
+  },
+  {
+    "nome": "Igaraçu do Tietê",
+    "pop": 23430
+  },
+  {
+    "nome": "Igarapava",
+    "pop": 26755
+  },
+  {
+    "nome": "Igaratá",
+    "pop": 10904
+  },
+  {
+    "nome": "Iguape",
+    "pop": 29881
+  },
+  {
+    "nome": "Ilhabela",
+    "pop": 36329
+  },
+  {
+    "nome": "Ilha Comprida",
+    "pop": 13955
+  },
+  {
+    "nome": "Ilha Solteira",
+    "pop": 26240
+  },
+  {
+    "nome": "Indaiatuba",
+    "pop": 267796
+  },
+  {
+    "nome": "Indiana",
+    "pop": 5191
+  },
+  {
+    "nome": "Indiaporã",
+    "pop": 4109
+  },
+  {
+    "nome": "Inúbia Paulista",
+    "pop": 3671
+  },
+  {
+    "nome": "Ipaussu",
+    "pop": 13933
+  },
+  {
+    "nome": "Iperó",
+    "pop": 37999
+  },
+  {
+    "nome": "Ipeúna",
+    "pop": 6999
+  },
+  {
+    "nome": "Ipiguá",
+    "pop": 7037
+  },
+  {
+    "nome": "Iporanga",
+    "pop": 4091
+  },
+  {
+    "nome": "Ipuã",
+    "pop": 14691
+  },
+  {
+    "nome": "Iracemápolis",
+    "pop": 22435
+  },
+  {
+    "nome": "Irapuã",
+    "pop": 6946
+  },
+  {
+    "nome": "Irapuru",
+    "pop": 7145
+  },
+  {
+    "nome": "Itaberá",
+    "pop": 18258
+  },
+  {
+    "nome": "Itaí",
+    "pop": 25930
+  },
+  {
+    "nome": "Itajobi",
+    "pop": 17420
+  },
+  {
+    "nome": "Itaju",
+    "pop": 3702
+  },
+  {
+    "nome": "Itanhaém",
+    "pop": 117435
+  },
+  {
+    "nome": "Itaoca",
+    "pop": 3490
+  },
+  {
+    "nome": "Itapecerica da Serra",
+    "pop": 163928
+  },
+  {
+    "nome": "Itapetininga",
+    "pop": 163774
+  },
+  {
+    "nome": "Itapeva",
+    "pop": 92324
+  },
+  {
+    "nome": "Itapevi",
+    "pop": 241924
+  },
+  {
+    "nome": "Itapira",
+    "pop": 73919
+  },
+  {
+    "nome": "Itapirapuã Paulista",
+    "pop": 4405
+  },
+  {
+    "nome": "Itápolis",
+    "pop": 40464
+  },
+  {
+    "nome": "Itaporanga",
+    "pop": 14260
+  },
+  {
+    "nome": "Itapuí",
+    "pop": 13984
+  },
+  {
+    "nome": "Itapura",
+    "pop": 4014
+  },
+  {
+    "nome": "Itaquaquecetuba",
+    "pop": 382521
+  },
+  {
+    "nome": "Itararé",
+    "pop": 45327
+  },
+  {
+    "nome": "Itariri",
+    "pop": 15762
+  },
+  {
+    "nome": "Itatiba",
+    "pop": 126403
+  },
+  {
+    "nome": "Itatinga",
+    "pop": 19427
+  },
+  {
+    "nome": "Itirapina",
+    "pop": 16433
+  },
+  {
+    "nome": "Itirapuã",
+    "pop": 5861
+  },
+  {
+    "nome": "Itobi",
+    "pop": 8210
+  },
+  {
+    "nome": "Itu",
+    "pop": 174561
+  },
+  {
+    "nome": "Itupeva",
+    "pop": 74119
+  },
+  {
+    "nome": "Ituverava",
+    "pop": 38451
+  },
+  {
+    "nome": "Jaborandi",
+    "pop": 6293
+  },
+  {
+    "nome": "Jaboticabal",
+    "pop": 73467
+  },
+  {
+    "nome": "Jacareí",
+    "pop": 249968
+  },
+  {
+    "nome": "Jaci",
+    "pop": 7878
+  },
+  {
+    "nome": "Jacupiranga",
+    "pop": 16254
+  },
+  {
+    "nome": "Jaguariúna",
+    "pop": 61801
+  },
+  {
+    "nome": "Jales",
+    "pop": 50017
+  },
+  {
+    "nome": "Jambeiro",
+    "pop": 6575
+  },
+  {
+    "nome": "Jandira",
+    "pop": 121988
+  },
+  {
+    "nome": "Jardinópolis",
+    "pop": 46868
+  },
+  {
+    "nome": "Jarinu",
+    "pop": 39531
+  },
+  {
+    "nome": "Jaú",
+    "pop": 137323
+  },
+  {
+    "nome": "Jeriquara",
+    "pop": 3976
+  },
+  {
+    "nome": "Joanópolis",
+    "pop": 13095
+  },
+  {
+    "nome": "João Ramalho",
+    "pop": 4456
+  },
+  {
+    "nome": "José Bonifácio",
+    "pop": 37859
+  },
+  {
+    "nome": "Júlio Mesquita",
+    "pop": 4308
+  },
+  {
+    "nome": "Jumirim",
+    "pop": 3123
+  },
+  {
+    "nome": "Jundiaí",
+    "pop": 460313
+  },
+  {
+    "nome": "Junqueirópolis",
+    "pop": 20878
+  },
+  {
+    "nome": "Juquiá",
+    "pop": 17255
+  },
+  {
+    "nome": "Juquitiba",
+    "pop": 28007
+  },
+  {
+    "nome": "Lagoinha",
+    "pop": 5182
+  },
+  {
+    "nome": "Laranjal Paulista",
+    "pop": 27009
+  },
+  {
+    "nome": "Lavínia",
+    "pop": 9909
+  },
+  {
+    "nome": "Lavrinhas",
+    "pop": 7328
+  },
+  {
+    "nome": "Leme",
+    "pop": 101316
+  },
+  {
+    "nome": "Lençóis Paulista",
+    "pop": 68395
+  },
+  {
+    "nome": "Limeira",
+    "pop": 300728
+  },
+  {
+    "nome": "Lindóia",
+    "pop": 7147
+  },
+  {
+    "nome": "Lins",
+    "pop": 76729
+  },
+  {
+    "nome": "Lorena",
+    "pop": 87370
+  },
+  {
+    "nome": "Lourdes",
+    "pop": 1968
+  },
+  {
+    "nome": "Louveira",
+    "pop": 54111
+  },
+  {
+    "nome": "Lucélia",
+    "pop": 20372
+  },
+  {
+    "nome": "Lucianópolis",
+    "pop": 2419
+  },
+  {
+    "nome": "Luís Antônio",
+    "pop": 12531
+  },
+  {
+    "nome": "Luiziânia",
+    "pop": 4751
+  },
+  {
+    "nome": "Lupércio",
+    "pop": 4017
+  },
+  {
+    "nome": "Lutécia",
+    "pop": 2699
+  },
+  {
+    "nome": "Macatuba",
+    "pop": 17120
+  },
+  {
+    "nome": "Macaubal",
+    "pop": 7587
+  },
+  {
+    "nome": "Macedônia",
+    "pop": 4048
+  },
+  {
+    "nome": "Magda",
+    "pop": 3212
+  },
+  {
+    "nome": "Mairinque",
+    "pop": 51660
+  },
+  {
+    "nome": "Mairiporã",
+    "pop": 97399
+  },
+  {
+    "nome": "Manduri",
+    "pop": 10092
+  },
+  {
+    "nome": "Marabá Paulista",
+    "pop": 4627
+  },
+  {
+    "nome": "Maracaí",
+    "pop": 12826
+  },
+  {
+    "nome": "Marapoama",
+    "pop": 3392
+  },
+  {
+    "nome": "Mariápolis",
+    "pop": 3539
+  },
+  {
+    "nome": "Marília",
+    "pop": 246627
+  },
+  {
+    "nome": "Marinópolis",
+    "pop": 1870
+  },
+  {
+    "nome": "Martinópolis",
+    "pop": 25299
+  },
+  {
+    "nome": "Matão",
+    "pop": 80998
+  },
+  {
+    "nome": "Mauá",
+    "pop": 429380
+  },
+  {
+    "nome": "Mendonça",
+    "pop": 6369
+  },
+  {
+    "nome": "Meridiano",
+    "pop": 4697
+  },
+  {
+    "nome": "Mesópolis",
+    "pop": 1988
+  },
+  {
+    "nome": "Miguelópolis",
+    "pop": 19655
+  },
+  {
+    "nome": "Mineiros do Tietê",
+    "pop": 11349
+  },
+  {
+    "nome": "Miracatu",
+    "pop": 18679
+  },
+  {
+    "nome": "Mira Estrela",
+    "pop": 3199
+  },
+  {
+    "nome": "Mirandópolis",
+    "pop": 28737
+  },
+  {
+    "nome": "Mirante do Paranapanema",
+    "pop": 16069
+  },
+  {
+    "nome": "Mirassol",
+    "pop": 65485
+  },
+  {
+    "nome": "Mirassolândia",
+    "pop": 4771
+  },
+  {
+    "nome": "Mococa",
+    "pop": 69324
+  },
+  {
+    "nome": "Mogi das Cruzes",
+    "pop": 468120
+  },
+  {
+    "nome": "Mogi Guaçu",
+    "pop": 159735
+  },
+  {
+    "nome": "Mogi Mirim",
+    "pop": 95534
+  },
+  {
+    "nome": "Mombuca",
+    "pop": 3815
+  },
+  {
+    "nome": "Monções",
+    "pop": 1954
+  },
+  {
+    "nome": "Mongaguá",
+    "pop": 64519
+  },
+  {
+    "nome": "Monte Alegre do Sul",
+    "pop": 8873
+  },
+  {
+    "nome": "Monte Alto",
+    "pop": 48725
+  },
+  {
+    "nome": "Monte Aprazível",
+    "pop": 22650
+  },
+  {
+    "nome": "Monte Azul Paulista",
+    "pop": 18363
+  },
+  {
+    "nome": "Monte Castelo",
+    "pop": 4301
+  },
+  {
+    "nome": "Monteiro Lobato",
+    "pop": 4205
+  },
+  {
+    "nome": "Monte Mor",
+    "pop": 67296
+  },
+  {
+    "nome": "Morro Agudo",
+    "pop": 28561
+  },
+  {
+    "nome": "Morungaba",
+    "pop": 14081
+  },
+  {
+    "nome": "Motuca",
+    "pop": 4079
+  },
+  {
+    "nome": "Murutinga do Sul",
+    "pop": 3763
+  },
+  {
+    "nome": "Nantes",
+    "pop": 2699
+  },
+  {
+    "nome": "Narandiba",
+    "pop": 5908
+  },
+  {
+    "nome": "Natividade da Serra",
+    "pop": 7134
+  },
+  {
+    "nome": "Nazaré Paulista",
+    "pop": 18620
+  },
+  {
+    "nome": "Neves Paulista",
+    "pop": 9921
+  },
+  {
+    "nome": "Nhandeara",
+    "pop": 9944
+  },
+  {
+    "nome": "Nipoã",
+    "pop": 4860
+  },
+  {
+    "nome": "Nova Aliança",
+    "pop": 6858
+  },
+  {
+    "nome": "Nova Campina",
+    "pop": 8631
+  },
+  {
+    "nome": "Nova Canaã Paulista",
+    "pop": 2058
+  },
+  {
+    "nome": "Nova Castilho",
+    "pop": 1074
+  },
+  {
+    "nome": "Nova Europa",
+    "pop": 9459
+  },
+  {
+    "nome": "Nova Granada",
+    "pop": 19725
+  },
+  {
+    "nome": "Nova Guataporanga",
+    "pop": 2188
+  },
+  {
+    "nome": "Nova Independência",
+    "pop": 4795
+  },
+  {
+    "nome": "Novais",
+    "pop": 4469
+  },
+  {
+    "nome": "Nova Luzitânia",
+    "pop": 2838
+  },
+  {
+    "nome": "Nova Odessa",
+    "pop": 64228
+  },
+  {
+    "nome": "Novo Horizonte",
+    "pop": 39435
+  },
+  {
+    "nome": "Nuporanga",
+    "pop": 7550
+  },
+  {
+    "nome": "Ocauçu",
+    "pop": 4412
+  },
+  {
+    "nome": "Óleo",
+    "pop": 2540
+  },
+  {
+    "nome": "Olímpia",
+    "pop": 56701
+  },
+  {
+    "nome": "Onda Verde",
+    "pop": 4912
+  },
+  {
+    "nome": "Oriente",
+    "pop": 6180
+  },
+  {
+    "nome": "Orindiúva",
+    "pop": 6145
+  },
+  {
+    "nome": "Orlândia",
+    "pop": 39193
+  },
+  {
+    "nome": "Osasco",
+    "pop": 756952
+  },
+  {
+    "nome": "Oscar Bressane",
+    "pop": 2504
+  },
+  {
+    "nome": "Osvaldo Cruz",
+    "pop": 32099
+  },
+  {
+    "nome": "Ourinhos",
+    "pop": 106877
+  },
+  {
+    "nome": "Ouroeste",
+    "pop": 10596
+  },
+  {
+    "nome": "Ouro Verde",
+    "pop": 7901
+  },
+  {
+    "nome": "Pacaembu",
+    "pop": 15217
+  },
+  {
+    "nome": "Palestina",
+    "pop": 11689
+  },
+  {
+    "nome": "Palmares Paulista",
+    "pop": 9709
+  },
+  {
+    "nome": "Palmeira d'Oeste",
+    "pop": 8994
+  },
+  {
+    "nome": "Palmital",
+    "pop": 19767
+  },
+  {
+    "nome": "Panorama",
+    "pop": 15214
+  },
+  {
+    "nome": "Paraguaçu Paulista",
+    "pop": 42087
+  },
+  {
+    "nome": "Paraibuna",
+    "pop": 17950
+  },
+  {
+    "nome": "Paraíso",
+    "pop": 6211
+  },
+  {
+    "nome": "Paranapanema",
+    "pop": 19799
+  },
+  {
+    "nome": "Paranapuã",
+    "pop": 4111
+  },
+  {
+    "nome": "Parapuã",
+    "pop": 10729
+  },
+  {
+    "nome": "Pardinho",
+    "pop": 7382
+  },
+  {
+    "nome": "Pariquera-Açu",
+    "pop": 19576
+  },
+  {
+    "nome": "Parisi",
+    "pop": 3001
+  },
+  {
+    "nome": "Patrocínio Paulista",
+    "pop": 14837
+  },
+  {
+    "nome": "Paulicéia",
+    "pop": 8200
+  },
+  {
+    "nome": "Paulínia",
+    "pop": 115690
+  },
+  {
+    "nome": "Paulistânia",
+    "pop": 2146
+  },
+  {
+    "nome": "Paulo de Faria",
+    "pop": 7430
+  },
+  {
+    "nome": "Pederneiras",
+    "pop": 46223
+  },
+  {
+    "nome": "Pedra Bela",
+    "pop": 6718
+  },
+  {
+    "nome": "Pedranópolis",
+    "pop": 2848
+  },
+  {
+    "nome": "Pedregulho",
+    "pop": 15742
+  },
+  {
+    "nome": "Pedreira",
+    "pop": 44332
+  },
+  {
+    "nome": "Pedrinhas Paulista",
+    "pop": 2838
+  },
+  {
+    "nome": "Pedro de Toledo",
+    "pop": 11539
+  },
+  {
+    "nome": "Penápolis",
+    "pop": 63317
+  },
+  {
+    "nome": "Pereira Barreto",
+    "pop": 24389
+  },
+  {
+    "nome": "Pereiras",
+    "pop": 8969
+  },
+  {
+    "nome": "Peruíbe",
+    "pop": 70543
+  },
+  {
+    "nome": "Piacatu",
+    "pop": 5623
+  },
+  {
+    "nome": "Piedade",
+    "pop": 54237
+  },
+  {
+    "nome": "Pilar do Sul",
+    "pop": 28417
+  },
+  {
+    "nome": "Pindamonhangaba",
+    "pop": 172027
+  },
+  {
+    "nome": "Pindorama",
+    "pop": 14721
+  },
+  {
+    "nome": "Pinhalzinho",
+    "pop": 15605
+  },
+  {
+    "nome": "Piquerobi",
+    "pop": 3296
+  },
+  {
+    "nome": "Piquete",
+    "pop": 12570
+  },
+  {
+    "nome": "Piracaia",
+    "pop": 26764
+  },
+  {
+    "nome": "Piracicaba",
+    "pop": 438827
+  },
+  {
+    "nome": "Piraju",
+    "pop": 30261
+  },
+  {
+    "nome": "Pirajuí",
+    "pop": 22743
+  },
+  {
+    "nome": "Pirangi",
+    "pop": 11076
+  },
+  {
+    "nome": "Pirapora do Bom Jesus",
+    "pop": 18836
+  },
+  {
+    "nome": "Pirapozinho",
+    "pop": 26065
+  },
+  {
+    "nome": "Pirassununga",
+    "pop": 75475
+  },
+  {
+    "nome": "Piratininga",
+    "pop": 15554
+  },
+  {
+    "nome": "Pitangueiras",
+    "pop": 34416
+  },
+  {
+    "nome": "Planalto",
+    "pop": 4454
+  },
+  {
+    "nome": "Platina",
+    "pop": 3061
+  },
+  {
+    "nome": "Poá",
+    "pop": 106431
+  },
+  {
+    "nome": "Poloni",
+    "pop": 5696
+  },
+  {
+    "nome": "Pompéia",
+    "pop": 20512
+  },
+  {
+    "nome": "Pongaí",
+    "pop": 3443
+  },
+  {
+    "nome": "Pontal",
+    "pop": 38376
+  },
+  {
+    "nome": "Pontalinda",
+    "pop": 4196
+  },
+  {
+    "nome": "Pontes Gestal",
+    "pop": 2415
+  },
+  {
+    "nome": "Populina",
+    "pop": 4185
+  },
+  {
+    "nome": "Porangaba",
+    "pop": 10773
+  },
+  {
+    "nome": "Porto Feliz",
+    "pop": 58345
+  },
+  {
+    "nome": "Porto Ferreira",
+    "pop": 53940
+  },
+  {
+    "nome": "Potim",
+    "pop": 20767
+  },
+  {
+    "nome": "Potirendaba",
+    "pop": 18994
+  },
+  {
+    "nome": "Pracinha",
+    "pop": 2599
+  },
+  {
+    "nome": "Pradópolis",
+    "pop": 17309
+  },
+  {
+    "nome": "Praia Grande",
+    "pop": 365577
+  },
+  {
+    "nome": "Pratânia",
+    "pop": 5246
+  },
+  {
+    "nome": "Presidente Alves",
+    "pop": 3841
+  },
+  {
+    "nome": "Presidente Bernardes",
+    "pop": 14772
+  },
+  {
+    "nome": "Presidente Epitácio",
+    "pop": 40383
+  },
+  {
+    "nome": "Presidente Prudente",
+    "pop": 234083
+  },
+  {
+    "nome": "Presidente Venceslau",
+    "pop": 35902
+  },
+  {
+    "nome": "Promissão",
+    "pop": 35991
+  },
+  {
+    "nome": "Quadra",
+    "pop": 3472
+  },
+  {
+    "nome": "Quatá",
+    "pop": 13399
+  },
+  {
+    "nome": "Queiroz",
+    "pop": 3351
+  },
+  {
+    "nome": "Queluz",
+    "pop": 9146
+  },
+  {
+    "nome": "Quintana",
+    "pop": 7225
+  },
+  {
+    "nome": "Rafard",
+    "pop": 9133
+  },
+  {
+    "nome": "Rancharia",
+    "pop": 29305
+  },
+  {
+    "nome": "Redenção da Serra",
+    "pop": 4611
+  },
+  {
+    "nome": "Regente Feijó",
+    "pop": 20565
+  },
+  {
+    "nome": "Reginópolis",
+    "pop": 7808
+  },
+  {
+    "nome": "Registro",
+    "pop": 61732
+  },
+  {
+    "nome": "Restinga",
+    "pop": 6492
+  },
+  {
+    "nome": "Ribeira",
+    "pop": 3166
+  },
+  {
+    "nome": "Ribeirão Bonito",
+    "pop": 11079
+  },
+  {
+    "nome": "Ribeirão Branco",
+    "pop": 18930
+  },
+  {
+    "nome": "Ribeirão Corrente",
+    "pop": 4706
+  },
+  {
+    "nome": "Ribeirão do Sul",
+    "pop": 4768
+  },
+  {
+    "nome": "Ribeirão dos Índios",
+    "pop": 2045
+  },
+  {
+    "nome": "Ribeirão Grande",
+    "pop": 7570
+  },
+  {
+    "nome": "Ribeirão Pires",
+    "pop": 118877
+  },
+  {
+    "nome": "Ribeirão Preto",
+    "pop": 728400
+  },
+  {
+    "nome": "Riversul",
+    "pop": 5647
+  },
+  {
+    "nome": "Rifaina",
+    "pop": 4158
+  },
+  {
+    "nome": "Rincão",
+    "pop": 9145
+  },
+  {
+    "nome": "Rinópolis",
+    "pop": 9357
+  },
+  {
+    "nome": "Rio Claro",
+    "pop": 208857
+  },
+  {
+    "nome": "Rio das Pedras",
+    "pop": 32267
+  },
+  {
+    "nome": "Rio Grande da Serra",
+    "pop": 45317
+  },
+  {
+    "nome": "Riolândia",
+    "pop": 10453
+  },
+  {
+    "nome": "Rosana",
+    "pop": 17533
+  },
+  {
+    "nome": "Roseira",
+    "pop": 11095
+  },
+  {
+    "nome": "Rubiácea",
+    "pop": 2741
+  },
+  {
+    "nome": "Rubinéia",
+    "pop": 3965
+  },
+  {
+    "nome": "Sabino",
+    "pop": 5185
+  },
+  {
+    "nome": "Sagres",
+    "pop": 2519
+  },
+  {
+    "nome": "Sales",
+    "pop": 6612
+  },
+  {
+    "nome": "Sales Oliveira",
+    "pop": 11654
+  },
+  {
+    "nome": "Salesópolis",
+    "pop": 15396
+  },
+  {
+    "nome": "Salmourão",
+    "pop": 4883
+  },
+  {
+    "nome": "Saltinho",
+    "pop": 8371
+  },
+  {
+    "nome": "Salto",
+    "pop": 140125
+  },
+  {
+    "nome": "Salto de Pirapora",
+    "pop": 45138
+  },
+  {
+    "nome": "Salto Grande",
+    "pop": 9212
+  },
+  {
+    "nome": "Sandovalina",
+    "pop": 3699
+  },
+  {
+    "nome": "Santa Adélia",
+    "pop": 14203
+  },
+  {
+    "nome": "Santa Albertina",
+    "pop": 6543
+  },
+  {
+    "nome": "Santa Bárbara d'Oeste",
+    "pop": 189338
+  },
+  {
+    "nome": "Santa Branca",
+    "pop": 14212
+  },
+  {
+    "nome": "Santa Clara d'Oeste",
+    "pop": 2677
+  },
+  {
+    "nome": "Santa Cruz da Conceição",
+    "pop": 4365
+  },
+  {
+    "nome": "Santa Cruz da Esperança",
+    "pop": 2162
+  },
+  {
+    "nome": "Santa Cruz das Palmeiras",
+    "pop": 29525
+  },
+  {
+    "nome": "Santa Cruz do Rio Pardo",
+    "pop": 47677
+  },
+  {
+    "nome": "Santa Ernestina",
+    "pop": 6256
+  },
+  {
+    "nome": "Santa Fé do Sul",
+    "pop": 36098
+  },
+  {
+    "nome": "Santa Gertrudes",
+    "pop": 24107
+  },
+  {
+    "nome": "Santa Isabel",
+    "pop": 54586
+  },
+  {
+    "nome": "Santa Lúcia",
+    "pop": 7181
+  },
+  {
+    "nome": "Santa Maria da Serra",
+    "pop": 5314
+  },
+  {
+    "nome": "Santa Mercedes",
+    "pop": 3012
+  },
+  {
+    "nome": "Santana da Ponte Pensa",
+    "pop": 1698
+  },
+  {
+    "nome": "Santana de Parnaíba",
+    "pop": 162341
+  },
+  {
+    "nome": "Santa Rita d'Oeste",
+    "pop": 2790
+  },
+  {
+    "nome": "Santa Rita do Passa Quatro",
+    "pop": 25060
+  },
+  {
+    "nome": "Santa Rosa de Viterbo",
+    "pop": 23725
+  },
+  {
+    "nome": "Santa Salete",
+    "pop": 1686
+  },
+  {
+    "nome": "Santo Anastácio",
+    "pop": 18045
+  },
+  {
+    "nome": "Santo André",
+    "pop": 778711
+  },
+  {
+    "nome": "Santo Antônio da Alegria",
+    "pop": 6917
+  },
+  {
+    "nome": "Santo Antônio de Posse",
+    "pop": 23779
+  },
+  {
+    "nome": "Santo Antônio do Aracanguá",
+    "pop": 8568
+  },
+  {
+    "nome": "Santo Antônio do Jardim",
+    "pop": 6237
+  },
+  {
+    "nome": "Santo Antônio do Pinhal",
+    "pop": 7294
+  },
+  {
+    "nome": "Santo Expedito",
+    "pop": 3063
+  },
+  {
+    "nome": "Santópolis do Aguapeí",
+    "pop": 3933
+  },
+  {
+    "nome": "Santos",
+    "pop": 429567
+  },
+  {
+    "nome": "São Bento do Sapucaí",
+    "pop": 11948
+  },
+  {
+    "nome": "São Bernardo do Campo",
+    "pop": 840499
+  },
+  {
+    "nome": "São Caetano do Sul",
+    "pop": 172109
+  },
+  {
+    "nome": "São Carlos",
+    "pop": 265294
+  },
+  {
+    "nome": "São Francisco",
+    "pop": 2629
+  },
+  {
+    "nome": "São João da Boa Vista",
+    "pop": 95762
+  },
+  {
+    "nome": "São João das Duas Pontes",
+    "pop": 2622
+  },
+  {
+    "nome": "São João de Iracema",
+    "pop": 1880
+  },
+  {
+    "nome": "São João do Pau d'Alho",
+    "pop": 2288
+  },
+  {
+    "nome": "São Joaquim da Barra",
+    "pop": 49815
+  },
+  {
+    "nome": "São José da Bela Vista",
+    "pop": 7690
+  },
+  {
+    "nome": "São José do Barreiro",
+    "pop": 3898
+  },
+  {
+    "nome": "São José do Rio Pardo",
+    "pop": 53416
+  },
+  {
+    "nome": "São José do Rio Preto",
+    "pop": 501597
+  },
+  {
+    "nome": "São José dos Campos",
+    "pop": 724756
+  },
+  {
+    "nome": "São Lourenço da Serra",
+    "pop": 16458
+  },
+  {
+    "nome": "São Luiz do Paraitinga",
+    "pop": 10497
+  },
+  {
+    "nome": "São Manuel",
+    "pop": 38166
+  },
+  {
+    "nome": "São Miguel Arcanjo",
+    "pop": 32904
+  },
+  {
+    "nome": "São Paulo",
+    "pop": 11895578
+  },
+  {
+    "nome": "São Pedro",
+    "pop": 39725
+  },
+  {
+    "nome": "São Pedro do Turvo",
+    "pop": 7333
+  },
+  {
+    "nome": "São Roque",
+    "pop": 81342
+  },
+  {
+    "nome": "São Sebastião",
+    "pop": 84019
+  },
+  {
+    "nome": "São Sebastião da Grama",
+    "pop": 10484
+  },
+  {
+    "nome": "São Simão",
+    "pop": 13590
+  },
+  {
+    "nome": "São Vicente",
+    "pop": 338407
+  },
+  {
+    "nome": "Sarapuí",
+    "pop": 10632
+  },
+  {
+    "nome": "Sarutaiá",
+    "pop": 3769
+  },
+  {
+    "nome": "Sebastianópolis do Sul",
+    "pop": 3187
+  },
+  {
+    "nome": "Serra Azul",
+    "pop": 13058
+  },
+  {
+    "nome": "Serrana",
+    "pop": 45408
+  },
+  {
+    "nome": "Serra Negra",
+    "pop": 30920
+  },
+  {
+    "nome": "Sertãozinho",
+    "pop": 131600
+  },
+  {
+    "nome": "Sete Barras",
+    "pop": 12912
+  },
+  {
+    "nome": "Severínia",
+    "pop": 14724
+  },
+  {
+    "nome": "Silveiras",
+    "pop": 6313
+  },
+  {
+    "nome": "Socorro",
+    "pop": 41405
+  },
+  {
+    "nome": "Sorocaba",
+    "pop": 757459
+  },
+  {
+    "nome": "Sud Mennucci",
+    "pop": 7466
+  },
+  {
+    "nome": "Sumaré",
+    "pop": 289787
+  },
+  {
+    "nome": "Suzano",
+    "pop": 318765
+  },
+  {
+    "nome": "Suzanápolis",
+    "pop": 3464
+  },
+  {
+    "nome": "Tabapuã",
+    "pop": 11499
+  },
+  {
+    "nome": "Tabatinga",
+    "pop": 14994
+  },
+  {
+    "nome": "Taboão da Serra",
+    "pop": 284274
+  },
+  {
+    "nome": "Taciba",
+    "pop": 6399
+  },
+  {
+    "nome": "Taguaí",
+    "pop": 13006
+  },
+  {
+    "nome": "Taiaçu",
+    "pop": 5751
+  },
+  {
+    "nome": "Taiúva",
+    "pop": 6733
+  },
+  {
+    "nome": "Tambaú",
+    "pop": 21682
+  },
+  {
+    "nome": "Tanabi",
+    "pop": 26021
+  },
+  {
+    "nome": "Tapiraí",
+    "pop": 8122
+  },
+  {
+    "nome": "Tapiratiba",
+    "pop": 11936
+  },
+  {
+    "nome": "Taquaral",
+    "pop": 2652
+  },
+  {
+    "nome": "Taquaritinga",
+    "pop": 53322
+  },
+  {
+    "nome": "Taquarituba",
+    "pop": 24863
+  },
+  {
+    "nome": "Taquarivaí",
+    "pop": 7112
+  },
+  {
+    "nome": "Tarabai",
+    "pop": 6635
+  },
+  {
+    "nome": "Tarumã",
+    "pop": 15248
+  },
+  {
+    "nome": "Tatuí",
+    "pop": 128560
+  },
+  {
+    "nome": "Taubaté",
+    "pop": 321298
+  },
+  {
+    "nome": "Tejupá",
+    "pop": 4142
+  },
+  {
+    "nome": "Teodoro Sampaio",
+    "pop": 22559
+  },
+  {
+    "nome": "Terra Roxa",
+    "pop": 7985
+  },
+  {
+    "nome": "Tietê",
+    "pop": 38690
+  },
+  {
+    "nome": "Timburi",
+    "pop": 2490
+  },
+  {
+    "nome": "Torre de Pedra",
+    "pop": 2063
+  },
+  {
+    "nome": "Torrinha",
+    "pop": 9484
+  },
+  {
+    "nome": "Trabiju",
+    "pop": 1719
+  },
+  {
+    "nome": "Tremembé",
+    "pop": 53083
+  },
+  {
+    "nome": "Três Fronteiras",
+    "pop": 7013
+  },
+  {
+    "nome": "Tuiuti",
+    "pop": 6947
+  },
+  {
+    "nome": "Tupã",
+    "pop": 65416
+  },
+  {
+    "nome": "Tupi Paulista",
+    "pop": 16206
+  },
+  {
+    "nome": "Turiúba",
+    "pop": 1839
+  },
+  {
+    "nome": "Turmalina",
+    "pop": 1672
+  },
+  {
+    "nome": "Ubarana",
+    "pop": 5456
+  },
+  {
+    "nome": "Ubatuba",
+    "pop": 96598
+  },
+  {
+    "nome": "Ubirajara",
+    "pop": 5265
+  },
+  {
+    "nome": "Uchoa",
+    "pop": 10627
+  },
+  {
+    "nome": "União Paulista",
+    "pop": 1628
+  },
+  {
+    "nome": "Urânia",
+    "pop": 8973
+  },
+  {
+    "nome": "Uru",
+    "pop": 1419
+  },
+  {
+    "nome": "Urupês",
+    "pop": 14038
+  },
+  {
+    "nome": "Valentim Gentil",
+    "pop": 14531
+  },
+  {
+    "nome": "Valinhos",
+    "pop": 131277
+  },
+  {
+    "nome": "Valparaíso",
+    "pop": 24723
+  },
+  {
+    "nome": "Vargem",
+    "pop": 10805
+  },
+  {
+    "nome": "Vargem Grande do Sul",
+    "pop": 41226
+  },
+  {
+    "nome": "Vargem Grande Paulista",
+    "pop": 52103
+  },
+  {
+    "nome": "Várzea Paulista",
+    "pop": 119576
+  },
+  {
+    "nome": "Vera Cruz",
+    "pop": 10294
+  },
+  {
+    "nome": "Vinhedo",
+    "pop": 79235
+  },
+  {
+    "nome": "Viradouro",
+    "pop": 17681
+  },
+  {
+    "nome": "Vista Alegre do Alto",
+    "pop": 8327
+  },
+  {
+    "nome": "Vitória Brasil",
+    "pop": 1826
+  },
+  {
+    "nome": "Votorantim",
+    "pop": 132849
+  },
+  {
+    "nome": "Votuporanga",
+    "pop": 100159
+  },
+  {
+    "nome": "Zacarias",
+    "pop": 2761
+  },
+  {
+    "nome": "Chavantes",
+    "pop": 12411
+  },
+  {
+    "nome": "Estiva Gerbi",
+    "pop": 11566
+  }
+]
