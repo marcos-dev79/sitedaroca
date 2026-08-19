@@ -13,16 +13,17 @@ let activeRegiao = "all";
 
 function popupHtml(c) {
   const idh =
-    typeof c.idh === "number"
-      ? `IDH ${c.idh.toFixed(3)} (Atlas 2010)<br>`
-      : "";
+    typeof c.idh === "number" ? c.idh.toFixed(3) : "n/d";
+  const saude = c.saude || "não informado";
+  const educacao = c.educacao || "não informado";
+  const seguranca = c.seguranca || "não informado";
   return (
-    `<b>#${c.rank} — ${c.nome}/${c.uf}</b><br>` +
-    `Pop.: ~${c.pop.toLocaleString("pt-BR")} hab. | ${c.regiao}<br>` +
-    idh +
+    `<b>${c.nome}/${c.uf}</b> (IDH: ${idh})<br>` +
     `Cidade média: ${c.cidade_media}<br>` +
-    `Grande centro: ${c.grande_centro}<br>` +
-    `<em>${c.nota}</em>`
+    `Cidade grande: ${c.grande_centro}<br>` +
+    `<b>Saúde:</b> ${saude}<br>` +
+    `<b>Educação:</b> ${educacao}<br>` +
+    `<b>Segurança:</b> ${seguranca}`
   );
 }
 
@@ -31,7 +32,7 @@ function matchesFilter(c, query) {
   const regiaoOk = activeRegiao === "all" || c.regiao === activeRegiao;
   if (!regiaoOk) return false;
   if (!q) return true;
-  const hay = `${c.nome} ${c.uf} ${c.regiao} ${c.cidade_media} ${c.nota}`.toLowerCase();
+  const hay = `${c.nome} ${c.uf} ${c.regiao} ${c.cidade_media} ${c.grande_centro || ""} ${c.saude || ""} ${c.educacao || ""} ${c.seguranca || ""} ${c.nota || ""}`.toLowerCase();
   return hay.includes(q);
 }
 

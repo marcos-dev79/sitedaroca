@@ -13,8 +13,7 @@ ASSETS = ROOT / "assets"
 
 SITE_NAME = "Dev Remoto na Roça"
 SITE_DESC = (
-    "Estratégia para devs remotos morarem no interior: cidadezinhas "
-    "com infraestrutura básica, segurança e proximidade de centros urbanos."
+    "Cidadezinhas do interior com dados do IBGE, Atlas IDH e SIM/DATASUS."
 )
 SITE_URL = "https://marcos-dev79.github.io/sitedaroca"
 
@@ -74,7 +73,7 @@ def build_index(stats: dict, cities: list) -> str:
 
   <header class="map-header">
     <h1>Top {stats["total"]} Cidadezinhas para Dev Remoto na Roça</h1>
-    <p>Municípios de até ~15 mil hab., com infraestrutura básica, proximidade de cidade média e grande centro, e perfil para chácara afastada 3–7 km.</p>
+    <p>Até 20 mil hab., 30–50 km de cidade média (≥150 mil), até 1h30 de cidade grande (≥500 mil), com UPA/emergência, escola, farmácia e delegacia. Homicídios ≤ 15/100 mil. Ordenado por IDH.</p>
     <div class="map-controls">
       <input type="search" id="search" placeholder="Buscar cidade, UF ou região…" aria-label="Buscar cidade">
       <div class="filter-chips">

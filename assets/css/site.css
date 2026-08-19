@@ -319,6 +319,13 @@ a:hover { text-decoration: underline; }
   min-height: 420px;
 }
 
+.leaflet-popup-content {
+  min-width: 220px;
+  max-width: 320px;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
 .map-legend {
   position: absolute;
   bottom: 24px;

@@ -1,6 +1,8 @@
 # Dev Remoto na Roça
 
-Mapa interativo com **300 cidadezinhas** do Brasil para quem trabalha remoto e quer morar no interior.
+Mapa interativo com cidadezinhas brasileiras para quem trabalha remoto e quer morar no interior. O conjunto atual tem **47 municípios**, ordenados por IDH, após filtros de população, distância, infraestrutura e violência.
+
+Site: [https://marcos-dev79.github.io/sitedaroca/](https://marcos-dev79.github.io/sitedaroca/)
 
 Site: [https://marcos-dev79.github.io/sitedaroca/](https://marcos-dev79.github.io/sitedaroca/)
 
@@ -8,13 +10,17 @@ Isto **não é um conselho profissional**. Faça sua própria pesquisa e valide 
 
 ## Critérios
 
-- Até ~15 mil habitantes (IBGE 2024)
-- Até 50 km de uma cidade média (80–300 mil hab.)
-- Até ~2 h de um grande centro (≥400 mil hab. ou capital)
-- Preferência por melhores índices de IDH (Atlas 2010)
-- UPA, escola, farmácia, mercado e açougue (validar no local)
+- Até 20 mil habitantes (IBGE 2024)
+- Entre 30 e 50 km de uma cidade média (≥150 mil hab.)
+- Até 1h30 de uma cidade grande (≥500 mil hab.)
+- UPA (CNES) ou emergência 24h municipal (IBGE MUNIC 2021)
+- Escola (MUNIC 2021), farmácia (CNES) e delegacia de polícia civil (MUNIC 2023)
+- Taxa de homicídios ≤ 15 por 100 mil habitantes (SIM/DATASUS)
+- Ranking por IDH municipal (Atlas 2010)
 
-Distribuição atual: **185** Sul/Sudeste · **65** Centro-Oeste · **44** Nordeste · **6** Norte.
+Não há cota por região; os filtros do mapa por região permanecem.
+
+Distribuição atual: **38** Sul/Sudeste · **3** Centro-Oeste · **6** Nordeste · **0** Norte.
 
 ## Estrutura
 
@@ -22,11 +28,10 @@ Distribuição atual: **185** Sul/Sudeste · **65** Centro-Oeste · **44** Norde
 ROCA/
 ├── assets/                  # CSS, JS e imagens fonte
 ├── data/
-│   └── cidadezinhas.json    # 300 municípios do mapa
+│   └── cidadezinhas.json    # municípios do mapa (gerado)
 ├── dist/                    # Site gerado (não versionar)
 ├── build.py                 # Gera dist/ para publicação
-├── expandir-cidadezinhas.py # Adiciona nova leva de municípios
-├── enriquecer-originais.py  # Completa IDH e notas das cidades
+├── rebuild_cidadezinhas.py  # Recalcula o JSON com IBGE/CNES/SIM
 └── .github/workflows/deploy.yml
 ```
 
@@ -76,9 +81,9 @@ Se a URL do site mudar, edite `SITE_URL` em `build.py`.
 Scripts opcionais (não rodam no CI):
 
 ```bash
-python3 expandir-cidadezinhas.py      # nova leva de cidades (use --force se o dataset já tiver 300)
-python3 enriquecer-originais.py       # IDH + notas no padrão da expansão
-python3 gerar-imagem-sp.py            # PNG estático com 100 cidades de SP
+python3 rebuild_cidadezinhas.py   # atualiza data/cidadezinhas.json (precisa das bases em data/cache/)
+python3 build.py
+python3 gerar-imagem-sp.py        # PNG estático com cidades de SP (opcional)
 ```
 
 ## Licença
