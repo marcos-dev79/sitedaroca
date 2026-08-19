@@ -61,6 +61,7 @@ function renderMarkers(query = "") {
 function setupFilters() {
   const search = document.getElementById("search");
   const chips = document.querySelectorAll(".chip[data-regiao]");
+  const bar = document.getElementById("map-controls");
 
   if (search) {
     search.addEventListener("input", () => renderMarkers(search.value));
@@ -73,6 +74,21 @@ function setupFilters() {
       activeRegiao = chip.dataset.regiao;
       renderMarkers(search ? search.value : "");
     });
+  });
+
+  if (!map || !bar) return;
+
+  const collapse = () => {
+    if (bar.contains(document.activeElement)) return;
+    bar.classList.add("collapsed");
+  };
+  const expand = () => bar.classList.remove("collapsed");
+
+  map.on("dragstart zoomstart", collapse);
+  bar.addEventListener("pointerenter", expand);
+  bar.addEventListener("focusin", expand);
+  bar.addEventListener("click", () => {
+    if (bar.classList.contains("collapsed")) expand();
   });
 }
 
