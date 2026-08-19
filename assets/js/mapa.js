@@ -10,15 +10,19 @@ let map;
 let markersLayer;
 let allCities = [];
 let activeRegiao = "all";
+let minAltitude = 0;
 
 function popupHtml(c) {
   const idh =
     typeof c.idh === "number" ? c.idh.toFixed(3) : "n/d";
+  const alt =
+    typeof c.altitude === "number" ? `${c.altitude} m` : "n/d";
   const saude = c.saude || "não informado";
   const educacao = c.educacao || "não informado";
   const seguranca = c.seguranca || "não informado";
   return (
     `<b>${c.nome}/${c.uf}</b> (IDH: ${idh})<br>` +
+    `Altitude: ${alt}<br>` +
     `Cidade média: ${c.cidade_media}<br>` +
     `Cidade grande: ${c.grande_centro}<br>` +
     `<b>Saúde:</b> ${saude}<br>` +
@@ -53,11 +57,15 @@ function matchesFilter(c, query) {
   for (const key of requiredInfra()) {
     if (!infra[key]) return false;
   }
+  const altOk =
+    minAltitude <= 0 ||
+    (typeof c.altitude === "number" && c.altitude > minAltitude);
+  if (!altOk) return false;
   const q = query.trim().toLowerCase();
   const regiaoOk = activeRegiao === "all" || c.regiao === activeRegiao;
   if (!regiaoOk) return false;
   if (!q) return true;
-  const hay = `${c.nome} ${c.uf} ${c.regiao} ${c.cidade_media} ${c.grande_centro || ""} ${c.saude || ""} ${c.educacao || ""} ${c.seguranca || ""} ${c.nota || ""}`.toLowerCase();
+  const hay = `${c.nome} ${c.uf} ${c.regiao} ${c.altitude ?? ""} ${c.cidade_media} ${c.grande_centro || ""} ${c.saude || ""} ${c.educacao || ""} ${c.seguranca || ""} ${c.nota || ""}`.toLowerCase();
   return hay.includes(q);
 }
 
@@ -86,6 +94,7 @@ function renderMarkers(query = "") {
 function setupFilters() {
   const search = document.getElementById("search");
   const chips = document.querySelectorAll(".chip[data-regiao]");
+  const altChips = document.querySelectorAll(".chip[data-alt]");
   const bar = document.getElementById("map-controls");
 
   if (search) {
@@ -101,6 +110,15 @@ function setupFilters() {
       chips.forEach((c) => c.classList.remove("active"));
       chip.classList.add("active");
       activeRegiao = chip.dataset.regiao;
+      renderMarkers(currentQuery());
+    });
+  });
+
+  altChips.forEach((chip) => {
+    chip.addEventListener("click", () => {
+      altChips.forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      minAltitude = Number(chip.dataset.alt) || 0;
       renderMarkers(currentQuery());
     });
   });

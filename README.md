@@ -27,16 +27,17 @@ Distribuição atual: **107** Sul/Sudeste · **10** Centro-Oeste · **18** Norde
 ## Mapa
 
 - **Filtro de região:** chips (Todas, Sudeste, Sul, Centro-Oeste, Nordeste, Norte)
+- **Altitude:** 0 m (todas), > 300 m, > 500 m, > 1000 m (sede municipal, Atlas 2010)
 - **Serviços (checkboxes):** UPA/emergência, escola, mercado, farmácia, delegacia, Correios. Marcado = a cidade precisa ter aquele item. **Por padrão só UPA está marcado**, então as 136 aparecem
 - A barra de filtros fica sobre o mapa: recolhe ao arrastar/zoom e abre de novo ao passar o mouse (ou tocar em “Filtros”)
-- **Popup:** nome/UF e IDH; cidade média; cidade grande; saúde, educação e segurança
+- **Popup:** nome/UF e IDH; altitude; cidade média; cidade grande; saúde, educação e segurança
 - Cidades `hidden` ficam um pouco mais transparentes quando visíveis
 
 ## Fontes
 
 - IBGE estimativas de população 2024
 - IBGE MUNIC 2021 (saúde, educação) e 2023 (segurança)
-- Atlas IDHM 2010 (PNUD/IPEA/FJP)
+- Atlas IDHM 2010 (PNUD/IPEA/FJP) — IDH, coordenadas e altitude da sede
 - SIM/DATASUS (homicídios X85–Y09)
 - CNES/DATASUS (UPA, farmácia)
 

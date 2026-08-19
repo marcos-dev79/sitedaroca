@@ -108,6 +108,12 @@ def build_index(stats: dict, cities: list, css_href: str, js_href: str) -> str:
           <button class="chip" data-regiao="Nordeste" type="button">Nordeste</button>
           <button class="chip" data-regiao="Norte" type="button">Norte</button>
         </div>
+        <div class="filter-chips" role="group" aria-label="Altitude">
+          <button class="chip active" data-alt="0" type="button">0 m</button>
+          <button class="chip" data-alt="300" type="button">&gt; 300 m</button>
+          <button class="chip" data-alt="500" type="button">&gt; 500 m</button>
+          <button class="chip" data-alt="1000" type="button">&gt; 1000 m</button>
+        </div>
         <div class="infra-filters" role="group" aria-label="Serviços no município">
           <label><input type="checkbox" data-infra="upa_ou_emergencia_24h" checked> UPA / emergência</label>
           <label><input type="checkbox" data-infra="escola"> Escola</label>

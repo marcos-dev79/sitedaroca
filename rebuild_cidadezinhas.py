@@ -89,6 +89,7 @@ def load_refs(pop: dict[str, int]) -> list[dict]:
                 "idh_edu": float(row["idhm_edu"]),
                 "lat": float(row["lat"]),
                 "lng": float(row["long"]),
+                "altitude": int(round(float(row["alt"]))) if row.get("alt") else None,
                 "pop": p,
             })
     return rows
@@ -301,6 +302,7 @@ def main():
             "ibge": c["cod"],
             "lat": round(c["lat"], 4),
             "lng": round(c["lng"], 4),
+            "altitude": c["altitude"],
             "cidade_media": f"{c['medium']['nome']} ({fmt_km(c['medium_km'])})",
             "grande_centro": f"{c['large']['nome']} ({fmt_time(c['large_km'])}, {fmt_km(c['large_km'])})",
             "homicidios": None if not c["hom"] else c["hom"]["homicidios"],
@@ -339,7 +341,7 @@ def main():
             "fontes": [
                 "IBGE Estimativas de população 2024 (SIDRA 6579)",
                 "IBGE MUNIC 2021 (saúde e educação) e MUNIC 2023 (segurança pública)",
-                "Atlas IDHM 2010 (PNUD/IPEA/FJP)",
+                "Atlas IDHM 2010 (PNUD/IPEA/FJP) — IDH, coordenadas e altitude da sede",
                 "SIM/DATASUS — homicídios por município (X85–Y09)",
                 "CNES/DATASUS — estabelecimentos (UPA, farmácia), se disponível",
             ],

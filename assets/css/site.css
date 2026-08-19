@@ -350,7 +350,8 @@ a:hover { text-decoration: underline; }
   border-color: transparent;
 }
 
-.chip[data-regiao="all"].active { background: var(--bg-soft); border-color: var(--border); }
+.chip[data-regiao="all"].active,
+.chip[data-alt].active { background: var(--bg-soft); border-color: var(--border); color: var(--text); }
 .chip[data-regiao="Sudeste"].active { background: var(--sudeste); color: #fff; }
 .chip[data-regiao="Sul"].active { background: var(--sul); color: #fff; }
 .chip[data-regiao="Centro-Oeste"].active { background: var(--centro-oeste); color: #fff; }
