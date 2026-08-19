@@ -11,6 +11,52 @@ let markersLayer;
 let allCities = [];
 let activeRegiao = "all";
 let minAltitude = 0;
+let crimeLayer;
+let crimeZones = [];
+let crimeVisible = false;
+
+const CRIME_BURST_SVG =
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">' +
+  '<path fill="#dc2626" stroke="#fff" stroke-width="1.2" stroke-linejoin="round" ' +
+  'd="M16 2 18.2 11.2 28 8.2 21.2 16 30 20.2 20.5 21.2 22.5 30 16 23.2 9.5 30 11.5 21.2 2 20.2 10.8 16 4 8.2 13.8 11.2Z"/>' +
+  "</svg>";
+
+function crimeIcon() {
+  return L.divIcon({
+    className: "crime-icon",
+    html: CRIME_BURST_SVG,
+    iconSize: [26, 26],
+    iconAnchor: [13, 13],
+    popupAnchor: [0, -14],
+  });
+}
+
+function popupCrime(c) {
+  const idh =
+    typeof c.idh === "number" ? c.idh.toFixed(3) : "n/d";
+  const taxa =
+    typeof c.taxa_homicidios_100k === "number"
+      ? c.taxa_homicidios_100k.toFixed(1)
+      : "n/d";
+  const pop =
+    typeof c.pop === "number" ? c.pop.toLocaleString("pt-BR") : "n/d";
+  const mortes = c.homicidios != null ? c.homicidios : "n/d";
+  const ano = c.homicidios_ano || "n/d";
+  const rank = c.rank != null ? `#${c.rank}` : "";
+  const grupo = {
+    top30_geral: "entre as 30 maiores taxas do país",
+    top100_min_100k: "entre as 100 mais violentas com ≥100 mil hab.",
+    referencia: "incluída como referência",
+  }[c.grupo] || "";
+  return (
+    `<b>${c.nome}/${c.uf}</b> ${rank}<br>` +
+    `IDH: ${idh}<br>` +
+    `Mortes: ${taxa}/100 mil hab.<br>` +
+    `Habitantes: ${pop}<br>` +
+    `Homicídios: ${mortes} (${ano}; SIM/DATASUS)` +
+    (grupo ? `<br>${grupo}` : "")
+  );
+}
 
 function popupHtml(c) {
   const idh =
@@ -123,6 +169,16 @@ function setupFilters() {
     });
   });
 
+  const crimeBtn = document.getElementById("toggle-crime");
+  if (crimeBtn) {
+    crimeBtn.addEventListener("click", () => {
+      crimeVisible = !crimeVisible;
+      crimeBtn.classList.toggle("active", crimeVisible);
+      crimeBtn.setAttribute("aria-pressed", crimeVisible ? "true" : "false");
+      renderCrimeLayer();
+    });
+  }
+
   if (!map || !bar) return;
 
   const collapse = () => {
@@ -139,6 +195,35 @@ function setupFilters() {
   });
 }
 
+function renderCrimeLayer() {
+  if (!crimeLayer) return;
+  crimeLayer.clearLayers();
+  if (!crimeVisible) {
+    if (map && map.hasLayer(crimeLayer)) map.removeLayer(crimeLayer);
+    return;
+  }
+  if (map && !map.hasLayer(crimeLayer)) crimeLayer.addTo(map);
+  for (const c of crimeZones) {
+    if (typeof c.lat !== "number" || typeof c.lng !== "number") continue;
+    L.marker([c.lat, c.lng], { icon: crimeIcon(), zIndexOffset: 800 })
+      .bindPopup(popupCrime(c))
+      .addTo(crimeLayer);
+  }
+}
+
+async function loadCrimeZones() {
+  if (Array.isArray(window.ZONAS_CRIME) && window.ZONAS_CRIME.length) {
+    return window.ZONAS_CRIME;
+  }
+  try {
+    const res = await fetch(`data/zonas-crime.json?v=${Date.now()}`, { cache: "no-store" });
+    if (!res.ok) return [];
+    const payload = await res.json();
+    return payload.zonas_crime || [];
+  } catch {
+    return [];
+  }
+}
 async function loadCities() {
   if (Array.isArray(window.CIDADEZINHAS) && window.CIDADEZINHAS.length) {
     return window.CIDADEZINHAS;
@@ -153,6 +238,7 @@ async function initMap() {
   const loading = document.getElementById("map-loading");
   try {
     allCities = await loadCities();
+    crimeZones = await loadCrimeZones();
 
     map = L.map("map", { center: [-15.5, -52.0], zoom: 4, minZoom: 3 });
     L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
@@ -162,6 +248,7 @@ async function initMap() {
     }).addTo(map);
 
     markersLayer = L.layerGroup().addTo(map);
+    crimeLayer = L.layerGroup();
     renderMarkers();
     setupFilters();
   } catch (err) {

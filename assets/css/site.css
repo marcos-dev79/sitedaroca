@@ -414,6 +414,41 @@ a:hover { text-decoration: underline; }
   vertical-align: middle;
 }
 
+.chip-crime {
+  background: #7f1d1d;
+  color: #fecaca;
+  border-color: #dc2626;
+}
+
+.chip-crime:hover {
+  color: #fff;
+  border-color: #f87171;
+}
+
+.chip-crime.active {
+  background: #dc2626;
+  color: #fff;
+  border-color: #fca5a5;
+}
+
+.crime-icon {
+  background: none !important;
+  border: none !important;
+}
+
+.crime-icon svg {
+  display: block;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.7));
+}
+
+.legend-burst {
+  width: 12px;
+  height: 12px;
+  border-radius: 0 !important;
+  background: #dc2626;
+  clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+}
+
 .map-loading {
   position: absolute;
   inset: 0;

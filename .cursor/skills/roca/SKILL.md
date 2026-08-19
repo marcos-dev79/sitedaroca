@@ -20,10 +20,12 @@ Não colocar PII no site (nome civil, e-mail). Autor Git ≠ conteúdo público.
 | Peça | Função |
 |------|--------|
 | `rebuild_cidadezinhas.py` | Recalcula `data/cidadezinhas.json` |
+| `rebuild_zonas_crime.py` | Recalcula `data/zonas-crime.json` (30 gerais + 100 ≥100 mil + Rio) |
 | `build.py` | Gera `dist/` (HTML + assets com hash + JSON embutido) |
 | `assets/js/mapa.js` | Mapa, filtros, popup |
 | `assets/css/site.css` | Estilo |
 | `data/cidadezinhas.json` | Dataset do mapa |
+| `data/zonas-crime.json` | 30 gerais + 100 ≥100 mil hab. + Rio (camada oculta) |
 | `data/ibge-pop-2024.json` | População IBGE 2024 |
 | `data/dados2010-ref.csv` | IDH, lat/lng, altitude (Atlas 2010) |
 | `data/cache/` | MUNIC/CNES/SIM — **não versionar** |
@@ -37,11 +39,12 @@ CI: `.github/workflows/deploy.yml` → `python3 build.py` → publica `dist/`. P
 
 1. Critério ou dado muda → editar constantes em `rebuild_cidadezinhas.py` (e copy em `build.py` / README se o usuário vir o texto).
 2. `python3 rebuild_cidadezinhas.py` (precisa de `data/cache/`).
-3. `python3 build.py`.
-4. Local: `cd dist && python3 -m http.server 8080`.
-5. Commit/push só se o usuário pedir. Não commitar `data/cache/`, `dist/`, zip CNES.
+3. `python3 rebuild_zonas_crime.py` se a camada de crime mudar.
+4. `python3 build.py`.
+5. Local: `cd dist && python3 -m http.server 8080`.
+6. Commit/push só se o usuário pedir. Não commitar `data/cache/`, `dist/`, zip CNES.
 
-Após mudar CSS/JS, o hash no nome do arquivo no `dist/` muda sozinho (`site.<hash>.css`, `mapa.<hash>.js`). Cidades vão em `window.CIDADEZINHAS` no HTML.
+Após mudar CSS/JS, o hash no nome do arquivo no `dist/` muda sozinho (`site.<hash>.css`, `mapa.<hash>.js`). Cidades vão em `window.CIDADEZINHAS`; zonas de crime em `window.ZONAS_CRIME`.
 
 ## Critérios de inclusão (JSON)
 
@@ -85,6 +88,7 @@ Filtros:
 - região: chips `data-regiao` (padrão `all`)
 - altitude: chips `data-alt` = `0` \| `300` \| `500` \| `1000`. Padrão `0` (todas). Demais = `altitude > N`
 - serviços: checkboxes `data-infra`. **Padrão: só UPA checked.** Marcado = exige o flag true
+- **Zonas de Crime:** `#toggle-crime`, desligado. Liga `crimeLayer` com ícone burst. Dataset `window.ZONAS_CRIME`. Popup: nome, IDH, taxa, pop, homicídios/ano, grupo. Recorte: 30 maiores taxas (qualquer pop.) + 100 ≥100 mil (sem duplicar) + Rio de Janeiro (`grupo: referencia`).
 
 Popup: `Nome/UF (IDH)` · altitude · cidade média · cidade grande · Saúde / Educação / Segurança.
 

@@ -31,7 +31,7 @@ Distribuição atual: **107** Sul/Sudeste · **10** Centro-Oeste · **18** Norde
 - **Serviços (checkboxes):** UPA/emergência, escola, mercado, farmácia, delegacia, Correios. Marcado = a cidade precisa ter aquele item. **Por padrão só UPA está marcado**, então as 136 aparecem
 - A barra de filtros fica sobre o mapa: recolhe ao arrastar/zoom e abre de novo ao passar o mouse (ou tocar em “Filtros”)
 - **Popup:** nome/UF e IDH; altitude; cidade média; cidade grande; saúde, educação e segurança
-- Cidades `hidden` ficam um pouco mais transparentes quando visíveis
+- **Zonas de Crime:** botão vermelho, desligado por padrão. **30** maiores taxas do país (qualquer tamanho) + **100** com ≥100 mil hab. + **Rio de Janeiro** como referência. Ícone de explosão. Popup: nome, IDH, mortes/100 mil, população.
 
 ## Fontes
 
@@ -48,12 +48,14 @@ ROCA/
 ├── assets/                  # CSS, JS e imagens fonte
 ├── data/
 │   ├── cidadezinhas.json    # municípios do mapa (gerado)
+│   ├── zonas-crime.json     # 30 gerais + 100 (≥100 mil) + Rio (gerado)
 │   ├── ibge-pop-2024.json
 │   ├── dados2010-ref.csv
 │   └── cache/               # bases MUNIC/CNES/SIM (não versionar)
 ├── dist/                    # Site gerado (não versionar)
 ├── build.py                 # Gera dist/ para publicação
 ├── rebuild_cidadezinhas.py  # Recalcula o JSON com IBGE/CNES/SIM
+├── rebuild_zonas_crime.py   # Recalcula zonas-crime.json
 └── .github/workflows/deploy.yml
 ```
 
@@ -103,6 +105,7 @@ Depois do deploy, o GitHub pode guardar o HTML por alguns minutos. Se o mapa par
 ## Editar conteúdo
 
 - **Cidades:** `rebuild_cidadezinhas.py` → `data/cidadezinhas.json` → `python3 build.py`
+- **Zonas de crime:** `rebuild_zonas_crime.py` → `data/zonas-crime.json` → `python3 build.py`
 - **Layout:** `build.py` (`build_index()`)
 - **Estilo:** `assets/css/site.css`
 - **Mapa (Leaflet, filtros, popup):** `assets/js/mapa.js`
@@ -110,7 +113,8 @@ Depois do deploy, o GitHub pode guardar o HTML por alguns minutos. Se o mapa par
 Scripts opcionais (não rodam no CI):
 
 ```bash
-python3 gerar-imagem-sp.py   # PNG estático com cidades de SP
+python3 rebuild_zonas_crime.py   # atualiza data/zonas-crime.json
+python3 gerar-imagem-sp.py       # PNG estático com cidades de SP
 ```
 
 ## Licença
