@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build do site estático para publicação."""
 
+import hashlib
 import json
 import shutil
 from collections import Counter
@@ -23,18 +24,25 @@ def load_cities():
         return json.load(f)
 
 
+def file_hash(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()[:12]
+
+
 def nav() -> str:
     return """<nav class="site-nav">
   <a class="brand" href="index.html">🌾 <span>Dev Remoto</span> na Roça</a>
 </nav>"""
 
 
-def head(title: str, desc: str = SITE_DESC, page: str = "index") -> str:
+def head(title: str, desc: str = SITE_DESC, page: str = "index", css_href: str = "assets/css/site.css") -> str:
     url = f"{SITE_URL}/{page}.html" if SITE_URL else ""
     og = f'<meta property="og:url" content="{url}">' if url else ""
     return f"""<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <meta name="description" content="{desc}">
   <meta name="theme-color" content="#0f172a">
   <meta property="og:type" content="website">
@@ -46,7 +54,7 @@ def head(title: str, desc: str = SITE_DESC, page: str = "index") -> str:
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{desc}">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
-  <link rel="stylesheet" href="assets/css/site.css">"""
+  <link rel="stylesheet" href="{css_href}">"""
 
 
 def cities_script(cities: list) -> str:
@@ -61,11 +69,11 @@ def footer(total: int) -> str:
 </footer>"""
 
 
-def build_index(stats: dict, cities: list) -> str:
+def build_index(stats: dict, cities: list, css_href: str, js_href: str) -> str:
     html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  {head(SITE_NAME, page="index")}
+  {head(SITE_NAME, page="index", css_href=css_href)}
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
 </head>
 <body>
@@ -120,19 +128,26 @@ def build_index(stats: dict, cities: list) -> str:
   </div>
 
   {footer(stats["total"])}
+  <script>
+    if ("serviceWorker" in navigator) {{
+      navigator.serviceWorker.getRegistrations().then(function (rs) {{
+        rs.forEach(function (r) {{ r.unregister(); }});
+      }});
+    }}
+  </script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   __CITIES_SCRIPT__
-  <script src="assets/js/mapa.js"></script>
+  <script src="{js_href}"></script>
 </body>
 </html>"""
     return html.replace("__CITIES_SCRIPT__", cities_script(cities))
 
 
-def build_404(total: int) -> str:
+def build_404(total: int, css_href: str) -> str:
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  {head("Página não encontrada — " + SITE_NAME)}
+  {head("Página não encontrada — " + SITE_NAME, css_href=css_href)}
 </head>
 <body>
   {nav()}
@@ -172,16 +187,22 @@ def main():
     (DIST / "assets" / "js").mkdir(parents=True)
     (DIST / "data").mkdir()
 
-    shutil.copy2(ASSETS / "css" / "site.css", DIST / "assets" / "css" / "site.css")
-    shutil.copy2(ASSETS / "js" / "mapa.js", DIST / "assets" / "js" / "mapa.js")
+    css_hash = file_hash(ASSETS / "css" / "site.css")
+    js_hash = file_hash(ASSETS / "js" / "mapa.js")
+    css_name = f"site.{css_hash}.css"
+    js_name = f"mapa.{js_hash}.js"
+    css_href = f"assets/css/{css_name}"
+    js_href = f"assets/js/{js_name}"
+    shutil.copy2(ASSETS / "css" / "site.css", DIST / "assets" / "css" / css_name)
+    shutil.copy2(ASSETS / "js" / "mapa.js", DIST / "assets" / "js" / js_name)
     img_sp = ASSETS / "img" / "cidades-sp-100.png"
     if img_sp.exists():
         (DIST / "assets" / "img").mkdir(parents=True, exist_ok=True)
         shutil.copy2(img_sp, DIST / "assets" / "img" / "cidades-sp-100.png")
     shutil.copy2(DATA_SRC, DIST / "data" / "cidadezinhas.json")
 
-    (DIST / "index.html").write_text(build_index(stats, cities), encoding="utf-8")
-    (DIST / "404.html").write_text(build_404(stats["total"]), encoding="utf-8")
+    (DIST / "index.html").write_text(build_index(stats, cities, css_href, js_href), encoding="utf-8")
+    (DIST / "404.html").write_text(build_404(stats["total"], css_href), encoding="utf-8")
     (DIST / ".nojekyll").touch()
     (DIST / "robots.txt").write_text("User-agent: *\nAllow: /\n", encoding="utf-8")
 
