@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
 DATA_SRC = ROOT / "data" / "cidadezinhas.json"
+CRIME_SRC = ROOT / "data" / "zonas-crime.json"
 ASSETS = ROOT / "assets"
 
 SITE_NAME = "Dev Remoto na Roça"
@@ -22,6 +23,14 @@ SITE_URL = "https://marcos-dev79.github.io/sitedaroca"
 def load_cities():
     with open(DATA_SRC, encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_crime() -> list:
+    if not CRIME_SRC.exists():
+        return []
+    with open(CRIME_SRC, encoding="utf-8") as f:
+        payload = json.load(f)
+    return payload.get("zonas_crime") or []
 
 
 def file_hash(path: Path) -> str:
@@ -63,13 +72,19 @@ def cities_script(cities: list) -> str:
     return f"<script>window.CIDADEZINHAS={payload};</script>"
 
 
+def crime_script(zones: list) -> str:
+    payload = json.dumps(zones, ensure_ascii=False, separators=(",", ":"))
+    payload = payload.replace("<", "\\u003c").replace(">", "\\u003e")
+    return f"<script>window.ZONAS_CRIME={payload};</script>"
+
+
 def footer(total: int) -> str:
     return f"""<footer class="site-footer">
   <p>{SITE_NAME} · Dados: IBGE 2024, Atlas IDH 2010 · Mapa interativo com {total} municípios</p>
 </footer>"""
 
 
-def build_index(stats: dict, cities: list, css_href: str, js_href: str) -> str:
+def build_index(stats: dict, cities: list, crime_zones: list, css_href: str, js_href: str) -> str:
     html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -122,6 +137,7 @@ def build_index(stats: dict, cities: list, css_href: str, js_href: str) -> str:
           <label><input type="checkbox" data-infra="delegacia"> Delegacia</label>
           <label><input type="checkbox" data-infra="correios"> Correios</label>
         </div>
+        <button class="chip chip-crime" id="toggle-crime" type="button" aria-pressed="false">Zonas de Crime</button>
       </div>
     </div>
     <div class="map-legend">
@@ -130,6 +146,7 @@ def build_index(stats: dict, cities: list, css_href: str, js_href: str) -> str:
       <div><span style="background:#ca8a04"></span>Centro-Oeste</div>
       <div><span style="background:#dc2626"></span>Nordeste</div>
       <div><span style="background:#9333ea"></span>Norte</div>
+      <div class="legend-crime"><span class="legend-burst"></span>Zonas de crime</div>
     </div>
   </div>
 
@@ -143,10 +160,15 @@ def build_index(stats: dict, cities: list, css_href: str, js_href: str) -> str:
   </script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   __CITIES_SCRIPT__
+  __CRIME_SCRIPT__
   <script src="{js_href}"></script>
 </body>
 </html>"""
-    return html.replace("__CITIES_SCRIPT__", cities_script(cities))
+    return (
+        html.replace("__CITIES_SCRIPT__", cities_script(cities)).replace(
+            "__CRIME_SCRIPT__", crime_script(crime_zones)
+        )
+    )
 
 
 def build_404(total: int, css_href: str) -> str:
@@ -184,6 +206,7 @@ def stats_from(cities: list) -> dict:
 def main():
     payload = load_cities()
     cities = payload["cidadezinhas"]
+    crime_zones = load_crime()
     stats = stats_from(cities)
 
     if DIST.exists():
@@ -206,8 +229,12 @@ def main():
         (DIST / "assets" / "img").mkdir(parents=True, exist_ok=True)
         shutil.copy2(img_sp, DIST / "assets" / "img" / "cidades-sp-100.png")
     shutil.copy2(DATA_SRC, DIST / "data" / "cidadezinhas.json")
+    if CRIME_SRC.exists():
+        shutil.copy2(CRIME_SRC, DIST / "data" / "zonas-crime.json")
 
-    (DIST / "index.html").write_text(build_index(stats, cities, css_href, js_href), encoding="utf-8")
+    (DIST / "index.html").write_text(
+        build_index(stats, cities, crime_zones, css_href, js_href), encoding="utf-8"
+    )
     (DIST / "404.html").write_text(build_404(stats["total"], css_href), encoding="utf-8")
     (DIST / ".nojekyll").touch()
     (DIST / "robots.txt").write_text("User-agent: *\nAllow: /\n", encoding="utf-8")
