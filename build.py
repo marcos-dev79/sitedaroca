@@ -73,7 +73,7 @@ def build_index(stats: dict, cities: list) -> str:
 
   <header class="map-header">
     <h1>Top {stats["total"]} Cidadezinhas para Dev Remoto na Roça</h1>
-    <p>Até 20 mil hab., 30–50 km de cidade média (≥150 mil), até 1h30 de cidade grande (≥500 mil), com UPA/emergência, escola, farmácia e delegacia. Homicídios ≤ 15/100 mil. Ordenado por IDH.</p>
+    <p>Até 20 mil hab., 30–50 km de cidade média (≥150 mil), até 1h30 de cidade grande (≥500 mil). UPA/emergência no conjunto. Homicídios ≤ 15/100 mil. Ordenado por IDH. Marque um serviço para exigir que a cidade o tenha.</p>
     <div class="map-stats">
       <span class="stat">Total: {stats["total"]}</span>
       <span class="stat">Visíveis: <span id="visible-count">{stats["total"]}</span></span>
@@ -99,6 +99,14 @@ def build_index(stats: dict, cities: list) -> str:
           <button class="chip" data-regiao="Centro-Oeste" type="button">Centro-Oeste</button>
           <button class="chip" data-regiao="Nordeste" type="button">Nordeste</button>
           <button class="chip" data-regiao="Norte" type="button">Norte</button>
+        </div>
+        <div class="infra-filters" role="group" aria-label="Serviços no município">
+          <label><input type="checkbox" data-infra="upa_ou_emergencia_24h" checked> UPA / emergência</label>
+          <label><input type="checkbox" data-infra="escola"> Escola</label>
+          <label><input type="checkbox" data-infra="mercado"> Mercado</label>
+          <label><input type="checkbox" data-infra="farmacia"> Farmácia</label>
+          <label><input type="checkbox" data-infra="delegacia"> Delegacia</label>
+          <label><input type="checkbox" data-infra="correios"> Correios</label>
         </div>
       </div>
     </div>

@@ -261,18 +261,16 @@ def main():
         if not has_escola:
             dropped["sem_escola"] += 1
             continue
-        if not has_delegacia:
-            dropped["sem_delegacia"] += 1
-            continue
-        if not has_farmacia:
-            dropped["sem_farmacia"] += 1
-            continue
-        if not has_mercado:
-            dropped["sem_mercado"] += 1
-            continue
-        if not has_correios:
-            dropped["sem_correios"] += 1
-            continue
+
+        infra = {
+            "upa_ou_emergencia_24h": has_upa,
+            "escola": has_escola,
+            "mercado": has_mercado,
+            "farmacia": has_farmacia,
+            "delegacia": has_delegacia,
+            "correios": has_correios,
+        }
+        hidden = not all(infra.values())
 
         kept.append({
             **c,
@@ -280,18 +278,12 @@ def main():
             "saude_txt": build_saude(srow, cn, None),
             "educacao_txt": build_educacao(erow),
             "seguranca_txt": build_seguranca(grow, h),
-            "infra": {
-                "upa_ou_emergencia_24h": has_upa,
-                "escola": has_escola,
-                "mercado": has_mercado,
-                "farmacia": has_farmacia,
-                "delegacia": has_delegacia,
-                "correios": has_correios,
-            },
+            "infra": infra,
+            "hidden": hidden,
         })
 
     kept.sort(key=lambda c: (-c["idh"], c["pop"], c["nome"]))
-    print(f"Passo 2: {len(kept)} após filtros")
+    print(f"Passo 2: {len(kept)} após filtros (completas: {sum(1 for c in kept if not c['hidden'])})")
     print("Descarte:", dict(dropped))
 
     entries = []
@@ -318,6 +310,7 @@ def main():
             "educacao": c["educacao_txt"],
             "seguranca": c["seguranca_txt"],
             "infra": c["infra"],
+            "hidden": c["hidden"],
             "nota": (
                 f"IDH {c['idh']:.3f} (Atlas 2010)"
                 + (
@@ -339,9 +332,8 @@ def main():
                 "Até 1h30 de cidade grande (≥500 mil hab.; ~120 km a 80 km/h)",
                 "UPA no CNES (tipo 73) ou emergência 24h municipal (MUNIC 2021 MSAU451)",
                 "Escola: estrutura educacional municipal (MUNIC 2021)",
-                "Delegacia de polícia civil (MUNIC 2023 MSEG161)",
-                "Farmácia ativa no CNES (tipo 43)",
-                "Mercado/Correios: sede municipal ≥2 mil hab. com farmácia (não há cadastro nacional aberto de mercearias/agências)",
+                "Farmácia, delegacia, mercado e Correios: inclusos no JSON; hidden=true se faltar algum (visíveis ao desmarcar o filtro)",
+                "Mercado/Correios: proxy (sede ≥2 mil hab. + farmácia); não há cadastro nacional aberto",
                 f"Taxa de homicídios ≤ {int(MAX_TAXA_HOMICIDIO)}/100 mil (SIM/DATASUS 2022–2024); municípios sem série não foram descartados por violência",
             ],
             "fontes": [

@@ -27,7 +27,32 @@ function popupHtml(c) {
   );
 }
 
+const INFRA_KEYS = [
+  "upa_ou_emergencia_24h",
+  "escola",
+  "mercado",
+  "farmacia",
+  "delegacia",
+  "correios",
+];
+
+function currentQuery() {
+  const search = document.getElementById("search");
+  return search ? search.value : "";
+}
+
+function requiredInfra() {
+  return INFRA_KEYS.filter((key) => {
+    const el = document.querySelector(`input[data-infra="${key}"]`);
+    return !el || el.checked;
+  });
+}
+
 function matchesFilter(c, query) {
+  const infra = c.infra || {};
+  for (const key of requiredInfra()) {
+    if (!infra[key]) return false;
+  }
   const q = query.trim().toLowerCase();
   const regiaoOk = activeRegiao === "all" || c.regiao === activeRegiao;
   if (!regiaoOk) return false;
@@ -48,7 +73,7 @@ function renderMarkers(query = "") {
       fillColor: REGIAO_CORES[c.regiao] || "#64748b",
       color: "#fff",
       weight: 1.5,
-      fillOpacity: 0.85,
+      fillOpacity: c.hidden ? 0.45 : 0.85,
     })
       .bindPopup(popupHtml(c))
       .addTo(markersLayer);
@@ -67,12 +92,16 @@ function setupFilters() {
     search.addEventListener("input", () => renderMarkers(search.value));
   }
 
+  document.querySelectorAll("input[data-infra]").forEach((box) => {
+    box.addEventListener("change", () => renderMarkers(currentQuery()));
+  });
+
   chips.forEach((chip) => {
     chip.addEventListener("click", () => {
       chips.forEach((c) => c.classList.remove("active"));
       chip.classList.add("active");
       activeRegiao = chip.dataset.regiao;
-      renderMarkers(search ? search.value : "");
+      renderMarkers(currentQuery());
     });
   });
 

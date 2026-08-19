@@ -1,6 +1,6 @@
 # Dev Remoto na Roça
 
-Mapa interativo com cidadezinhas brasileiras para quem trabalha remoto e quer morar no interior. O conjunto atual tem **47 municípios**, ordenados por IDH, após filtros de população, distância, infraestrutura e violência.
+Mapa interativo com cidadezinhas brasileiras para quem trabalha remoto e quer morar no interior. O conjunto atual tem **113 municípios** (47 com serviços completos visíveis por padrão), ordenados por IDH.
 
 Site: [https://marcos-dev79.github.io/sitedaroca/](https://marcos-dev79.github.io/sitedaroca/)
 
@@ -13,14 +13,14 @@ Isto **não é um conselho profissional**. Faça sua própria pesquisa e valide 
 - Até 20 mil habitantes (IBGE 2024)
 - Entre 30 e 50 km de uma cidade média (≥150 mil hab.)
 - Até 1h30 de uma cidade grande (≥500 mil hab.)
-- UPA (CNES) ou emergência 24h municipal (IBGE MUNIC 2021)
-- Escola (MUNIC 2021), farmácia (CNES) e delegacia de polícia civil (MUNIC 2023)
+- UPA (CNES) ou emergência 24h municipal (IBGE MUNIC 2021) e escola (MUNIC 2021)
+- Farmácia, delegacia, mercado e Correios: no JSON; `hidden` se faltar algum (aparecem com o filtro desmarcado; por padrão só UPA está exigido)
 - Taxa de homicídios ≤ 15 por 100 mil habitantes (SIM/DATASUS)
 - Ranking por IDH municipal (Atlas 2010)
 
 Não há cota por região; os filtros do mapa por região permanecem.
 
-Distribuição atual: **38** Sul/Sudeste · **3** Centro-Oeste · **6** Nordeste · **0** Norte.
+Distribuição atual: **86** Sul/Sudeste · **9** Centro-Oeste · **17** Nordeste · **1** Norte.
 
 ## Estrutura
 
