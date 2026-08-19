@@ -1,6 +1,6 @@
 # Dev Remoto na Roça
 
-Mapa interativo com cidadezinhas brasileiras para quem trabalha remoto e quer morar no interior. O conjunto atual tem **113 municípios**, ordenados por IDH (Atlas 2010). **47** têm o pacote completo de serviços no JSON; as demais entram com `"hidden": true` e aparecem no mapa conforme os checkboxes.
+Mapa interativo com cidadezinhas brasileiras para quem trabalha remoto e quer morar no interior. O conjunto atual tem **136 municípios**, ordenados por IDH (Atlas 2010). **54** têm o pacote completo de serviços no JSON; as demais entram com `"hidden": true` e aparecem no mapa conforme os checkboxes.
 
 Site: [https://marcos-dev79.github.io/sitedaroca/](https://marcos-dev79.github.io/sitedaroca/)
 
@@ -9,7 +9,7 @@ Isto **não é um conselho profissional**. Faça sua própria pesquisa e valide 
 ## Critérios (inclusão no JSON)
 
 - Até 20 mil habitantes (IBGE 2024, SIDRA 6579)
-- Entre 30 e 50 km de uma cidade média (≥150 mil hab.)
+- Entre 20 e 50 km de uma cidade média (≥150 mil hab.)
 - Até ~1h30 de uma cidade grande (≥500 mil hab.; ~120 km em linha reta a 80 km/h, não é Google Maps)
 - UPA no CNES (tipo 73) **ou** emergência 24h municipal (IBGE MUNIC 2021)
 - Escola / estrutura educacional municipal (MUNIC 2021)
@@ -22,12 +22,12 @@ Farmácia (CNES tipo 43), delegacia (MUNIC 2023), mercado e Correios **não** ex
 
 Mercado e Correios são **proxy** (sede ≥ 2 mil hab. + farmácia no CNES): não há cadastro nacional aberto. Vale conferir no local.
 
-Distribuição atual: **86** Sul/Sudeste · **9** Centro-Oeste · **17** Nordeste · **1** Norte.
+Distribuição atual: **107** Sul/Sudeste · **10** Centro-Oeste · **18** Nordeste · **1** Norte.
 
 ## Mapa
 
 - **Filtro de região:** chips (Todas, Sudeste, Sul, Centro-Oeste, Nordeste, Norte)
-- **Serviços (checkboxes):** UPA/emergência, escola, mercado, farmácia, delegacia, Correios. Marcado = a cidade precisa ter aquele item. **Por padrão só UPA está marcado**, então as 113 aparecem
+- **Serviços (checkboxes):** UPA/emergência, escola, mercado, farmácia, delegacia, Correios. Marcado = a cidade precisa ter aquele item. **Por padrão só UPA está marcado**, então as 136 aparecem
 - A barra de filtros fica sobre o mapa: recolhe ao arrastar/zoom e abre de novo ao passar o mouse (ou tocar em “Filtros”)
 - **Popup:** nome/UF e IDH; cidade média; cidade grande; saúde, educação e segurança
 - Cidades `hidden` ficam um pouco mais transparentes quando visíveis

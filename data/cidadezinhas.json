@@ -1,9 +1,9 @@
 {
   "meta": {
-    "titulo": "113 cidadezinhas para dev remoto na roça",
+    "titulo": "136 cidadezinhas para dev remoto na roça",
     "criterios": [
       "Até 20 mil habitantes (IBGE 2024)",
-      "Entre 30 e 50 km de cidade média (≥150 mil hab.)",
+      "Entre 20 e 50 km de cidade média (≥150 mil hab.)",
       "Até 1h30 de cidade grande (≥500 mil hab.; ~120 km a 80 km/h)",
       "UPA no CNES (tipo 73) ou emergência 24h municipal (MUNIC 2021 MSAU451)",
       "Escola: estrutura educacional municipal (MUNIC 2021)",
@@ -19,9 +19,9 @@
       "CNES/DATASUS — estabelecimentos (UPA, farmácia), se disponível"
     ],
     "distribuicao": {
-      "sul_sudeste": 86,
-      "centro_oeste": 9,
-      "nordeste": 17,
+      "sul_sudeste": 107,
+      "centro_oeste": 10,
+      "nordeste": 18,
       "norte": 1
     },
     "aviso": "Isto não é conselho profissional. Faça sua própria pesquisa e valide no local."
@@ -40,7 +40,7 @@
       "ibge": "3519055",
       "lat": -22.6417,
       "lng": -47.0593,
-      "cidade_media": "Mogi Guaçu (33 km)",
+      "cidade_media": "Sumaré (29 km)",
       "grande_centro": "Campinas (~15 min, 30 km)",
       "homicidios": 1,
       "homicidios_ano": 2023,
@@ -72,7 +72,7 @@
       "ibge": "3545159",
       "lat": -22.8434,
       "lng": -47.6783,
-      "cidade_media": "Americana (37 km)",
+      "cidade_media": "Santa Bárbara d'Oeste (29 km)",
       "grande_centro": "Campinas (~45 min, 64 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -189,6 +189,38 @@
     },
     {
       "rank": 6,
+      "nome": "Iguaraçu",
+      "uf": "PR",
+      "regiao": "Sul",
+      "pop": 5599,
+      "idh": 0.758,
+      "idh_renda": 0.714,
+      "idh_longev": 0.833,
+      "idh_edu": 0.732,
+      "ibge": "4110003",
+      "lat": -23.1948,
+      "lng": -51.8248,
+      "cidade_media": "Maringá (28 km)",
+      "grande_centro": "Londrina (~45 min, 69 km)",
+      "homicidios": null,
+      "homicidios_ano": null,
+      "taxa_homicidios_100k": null,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (1 equipes); estabelecimento de saúde da gestão municipal",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios não disponível no SIM 2022–2024; sem delegacia de polícia civil declarada (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": false,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.758 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
+    },
+    {
+      "rank": 7,
       "nome": "Santo Antônio do Aracanguá",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -220,7 +252,39 @@
       "nota": "IDH 0.757 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "nome": "Bálsamo",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "pop": 9854,
+      "idh": 0.756,
+      "idh_renda": 0.746,
+      "idh_longev": 0.835,
+      "idh_edu": 0.695,
+      "ibge": "3504800",
+      "lat": -20.7383,
+      "lng": -49.5793,
+      "cidade_media": "São José do Rio Preto (22 km)",
+      "grande_centro": "São José do Rio Preto (~15 min, 22 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2024,
+      "taxa_homicidios_100k": 10.1,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (2 equipes); estabelecimento de saúde da gestão municipal; UPA no município (CNES)",
+      "educacao": "órgão de educação: Setor subordinado diretamente  à chefia do Executivo; conselho municipal de educação; conselho de alimentação escolar",
+      "seguranca": "taxa de homicídios 10.1/100 mil hab. (1 óbito em 2024; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.756 (Atlas 2010); homicídios 10.1/100 mil (2024); validar comércio e Correios no local"
+    },
+    {
+      "rank": 9,
       "nome": "São Ludgero",
       "uf": "SC",
       "regiao": "Sul",
@@ -252,7 +316,7 @@
       "nota": "IDH 0.755 (Atlas 2010); homicídios 14.1/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "nome": "São Vendelino",
       "uf": "RS",
       "regiao": "Sul",
@@ -264,7 +328,7 @@
       "ibge": "4319752",
       "lat": -29.3758,
       "lng": -51.3687,
-      "cidade_media": "Novo Hamburgo (42 km)",
+      "cidade_media": "Caxias do Sul (30 km)",
       "grande_centro": "Porto Alegre (~1h, 74 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -284,7 +348,39 @@
       "nota": "IDH 0.754 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 9,
+      "rank": 11,
+      "nome": "Neves Paulista",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "pop": 9921,
+      "idh": 0.754,
+      "idh_renda": 0.737,
+      "idh_longev": 0.823,
+      "idh_edu": 0.707,
+      "ibge": "3532504",
+      "lat": -20.8439,
+      "lng": -49.6305,
+      "cidade_media": "São José do Rio Preto (26 km)",
+      "grande_centro": "São José do Rio Preto (~15 min, 26 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2024,
+      "taxa_homicidios_100k": 10.1,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (2 equipes); estabelecimento de saúde da gestão municipal",
+      "educacao": "órgão de educação: Setor subordinado diretamente  à chefia do Executivo; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios 10.1/100 mil hab. (1 óbito em 2024; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.754 (Atlas 2010); homicídios 10.1/100 mil (2024); validar comércio e Correios no local"
+    },
+    {
+      "rank": 12,
       "nome": "Rancho Queimado",
       "uf": "SC",
       "regiao": "Sul",
@@ -316,7 +412,7 @@
       "nota": "IDH 0.753 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 10,
+      "rank": 13,
       "nome": "Ipeúna",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -348,7 +444,7 @@
       "nota": "IDH 0.753 (Atlas 2010); homicídios 14.3/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 11,
+      "rank": 14,
       "nome": "Tapiratiba",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -380,7 +476,7 @@
       "nota": "IDH 0.751 (Atlas 2010); homicídios 8.4/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 12,
+      "rank": 15,
       "nome": "Linha Nova",
       "uf": "RS",
       "regiao": "Sul",
@@ -392,7 +488,7 @@
       "ibge": "4311643",
       "lat": -29.4626,
       "lng": -51.2019,
-      "cidade_media": "Caxias do Sul (33 km)",
+      "cidade_media": "Novo Hamburgo (26 km)",
       "grande_centro": "Porto Alegre (~45 min, 63 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -412,7 +508,7 @@
       "nota": "IDH 0.749 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 13,
+      "rank": 16,
       "nome": "Barão",
       "uf": "RS",
       "regiao": "Sul",
@@ -444,7 +540,7 @@
       "nota": "IDH 0.748 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 14,
+      "rank": 17,
       "nome": "Nova Trento",
       "uf": "SC",
       "regiao": "Sul",
@@ -456,7 +552,7 @@
       "ibge": "4211504",
       "lat": -27.2878,
       "lng": -48.9258,
-      "cidade_media": "Blumenau (43 km)",
+      "cidade_media": "Brusque (21 km)",
       "grande_centro": "Florianópolis (~45 min, 50 km)",
       "homicidios": 1,
       "homicidios_ano": 2022,
@@ -476,7 +572,7 @@
       "nota": "IDH 0.748 (Atlas 2010); homicídios 7.0/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 15,
+      "rank": 18,
       "nome": "Confins",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -488,7 +584,7 @@
       "ibge": "3117876",
       "lat": -19.6299,
       "lng": -43.9956,
-      "cidade_media": "Sete Lagoas (32 km)",
+      "cidade_media": "Santa Luzia (22 km)",
       "grande_centro": "Belo Horizonte (~30 min, 35 km)",
       "homicidios": 1,
       "homicidios_ano": 2024,
@@ -508,7 +604,39 @@
       "nota": "IDH 0.747 (Atlas 2010); homicídios 13.0/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 16,
+      "rank": 19,
+      "nome": "Itambé",
+      "uf": "PR",
+      "regiao": "Sul",
+      "pop": 6215,
+      "idh": 0.746,
+      "idh_renda": 0.691,
+      "idh_longev": 0.854,
+      "idh_edu": 0.703,
+      "ibge": "4111100",
+      "lat": -23.6601,
+      "lng": -51.99,
+      "cidade_media": "Maringá (27 km)",
+      "grande_centro": "Londrina (~1h15, 93 km)",
+      "homicidios": null,
+      "homicidios_ano": null,
+      "taxa_homicidios_100k": null,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (2 equipes); estabelecimento de saúde da gestão municipal",
+      "educacao": "órgão de educação: Secretaria em conjunto com outras políticas setoriais; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios não disponível no SIM 2022–2024; delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.746 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
+    },
+    {
+      "rank": 20,
       "nome": "Nuporanga",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -540,7 +668,7 @@
       "nota": "IDH 0.746 (Atlas 2010); homicídios 13.2/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 17,
+      "rank": 21,
       "nome": "Bom Princípio",
       "uf": "RS",
       "regiao": "Sul",
@@ -572,7 +700,7 @@
       "nota": "IDH 0.746 (Atlas 2010); homicídios 7.3/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 18,
+      "rank": 22,
       "nome": "Urupês",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -604,7 +732,7 @@
       "nota": "IDH 0.745 (Atlas 2010); homicídios 7.1/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 19,
+      "rank": 23,
       "nome": "Santa Cruz da Esperança",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -636,7 +764,7 @@
       "nota": "IDH 0.743 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 20,
+      "rank": 24,
       "nome": "São Jorge do Ivaí",
       "uf": "PR",
       "regiao": "Sul",
@@ -668,7 +796,7 @@
       "nota": "IDH 0.743 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 21,
+      "rank": 25,
       "nome": "Morro Reuter",
       "uf": "RS",
       "regiao": "Sul",
@@ -680,7 +808,7 @@
       "ibge": "4312476",
       "lat": -29.5393,
       "lng": -51.0801,
-      "cidade_media": "Caxias do Sul (43 km)",
+      "cidade_media": "São Leopoldo (26 km)",
       "grande_centro": "Porto Alegre (~45 min, 56 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -700,7 +828,7 @@
       "nota": "IDH 0.743 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 22,
+      "rank": 26,
       "nome": "Ascurra",
       "uf": "SC",
       "regiao": "Sul",
@@ -732,7 +860,39 @@
       "nota": "IDH 0.742 (Atlas 2010); homicídios 11.6/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 23,
+      "rank": 27,
+      "nome": "Nova Roma do Sul",
+      "uf": "RS",
+      "regiao": "Sul",
+      "pop": 3543,
+      "idh": 0.741,
+      "idh_renda": 0.794,
+      "idh_longev": 0.851,
+      "idh_edu": 0.602,
+      "ibge": "4313359",
+      "lat": -28.9847,
+      "lng": -51.4052,
+      "cidade_media": "Caxias do Sul (30 km)",
+      "grande_centro": "Porto Alegre (~1h30, 117 km)",
+      "homicidios": null,
+      "homicidios_ano": null,
+      "taxa_homicidios_100k": null,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (1 equipes); estabelecimento de saúde da gestão municipal",
+      "educacao": "órgão de educação: Secretaria em conjunto com outras políticas setoriais; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios não disponível no SIM 2022–2024; delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.741 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
+    },
+    {
+      "rank": 28,
       "nome": "Ibirá",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -764,7 +924,7 @@
       "nota": "IDH 0.740 (Atlas 2010); homicídios 8.4/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 24,
+      "rank": 29,
       "nome": "Nova Granada",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -796,7 +956,71 @@
       "nota": "IDH 0.739 (Atlas 2010); homicídios 5.1/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 25,
+      "rank": 30,
+      "nome": "Onda Verde",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "pop": 4912,
+      "idh": 0.738,
+      "idh_renda": 0.693,
+      "idh_longev": 0.863,
+      "idh_edu": 0.671,
+      "ibge": "3534005",
+      "lat": -20.6127,
+      "lng": -49.2992,
+      "cidade_media": "São José do Rio Preto (24 km)",
+      "grande_centro": "São José do Rio Preto (~15 min, 24 km)",
+      "homicidios": null,
+      "homicidios_ano": null,
+      "taxa_homicidios_100k": null,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (2 equipes); estabelecimento de saúde da gestão municipal",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar",
+      "seguranca": "taxa de homicídios não disponível no SIM 2022–2024; delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.738 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
+    },
+    {
+      "rank": 31,
+      "nome": "Nova Aliança",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "pop": 6858,
+      "idh": 0.738,
+      "idh_renda": 0.71,
+      "idh_longev": 0.826,
+      "idh_edu": 0.684,
+      "ibge": "3532801",
+      "lat": -21.0137,
+      "lng": -49.5071,
+      "cidade_media": "São José do Rio Preto (26 km)",
+      "grande_centro": "São José do Rio Preto (~15 min, 26 km)",
+      "homicidios": null,
+      "homicidios_ano": null,
+      "taxa_homicidios_100k": null,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (3 equipes); estabelecimento de saúde da gestão municipal",
+      "educacao": "órgão de educação: Setor subordinado diretamente  à chefia do Executivo; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios não disponível no SIM 2022–2024; delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.738 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
+    },
+    {
+      "rank": 32,
       "nome": "Dourado",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -828,7 +1052,7 @@
       "nota": "IDH 0.738 (Atlas 2010); homicídios 12.2/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 26,
+      "rank": 33,
       "nome": "Santa Lúcia",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -860,7 +1084,7 @@
       "nota": "IDH 0.737 (Atlas 2010); homicídios 13.9/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 27,
+      "rank": 34,
       "nome": "Atalaia",
       "uf": "PR",
       "regiao": "Sul",
@@ -892,7 +1116,39 @@
       "nota": "IDH 0.736 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 28,
+      "rank": 35,
+      "nome": "Rincão",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "pop": 9145,
+      "idh": 0.734,
+      "idh_renda": 0.701,
+      "idh_longev": 0.826,
+      "idh_edu": 0.682,
+      "ibge": "3543709",
+      "lat": -21.5892,
+      "lng": -48.0723,
+      "cidade_media": "Araraquara (25 km)",
+      "grande_centro": "Ribeirão Preto (~45 min, 53 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2022,
+      "taxa_homicidios_100k": 10.9,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (3 equipes); estabelecimento de saúde da gestão municipal; pronto-socorro (CNES)",
+      "educacao": "órgão de educação: Secretaria em conjunto com outras políticas setoriais; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios 10.9/100 mil hab. (1 óbito em 2022; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.734 (Atlas 2010); homicídios 10.9/100 mil (2022); validar comércio e Correios no local"
+    },
+    {
+      "rank": 36,
       "nome": "Bananal",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -904,7 +1160,7 @@
       "ibge": "3504909",
       "lat": -22.6826,
       "lng": -44.3233,
-      "cidade_media": "Volta Redonda (30 km)",
+      "cidade_media": "Barra Mansa (22 km)",
       "grande_centro": "Nova Iguaçu (~1h, 90 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -924,7 +1180,7 @@
       "nota": "IDH 0.733 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 29,
+      "rank": 37,
       "nome": "Pradópolis",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -956,7 +1212,7 @@
       "nota": "IDH 0.733 (Atlas 2010); homicídios 5.8/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 30,
+      "rank": 38,
       "nome": "São Bonifácio",
       "uf": "SC",
       "regiao": "Sul",
@@ -988,7 +1244,7 @@
       "nota": "IDH 0.731 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 31,
+      "rank": 39,
       "nome": "Luís Antônio",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1020,7 +1276,39 @@
       "nota": "IDH 0.731 (Atlas 2010); homicídios 8.0/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 32,
+      "rank": 40,
+      "nome": "Borda da Mata",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "pop": 17811,
+      "idh": 0.73,
+      "idh_renda": 0.703,
+      "idh_longev": 0.865,
+      "idh_edu": 0.64,
+      "ibge": "3108305",
+      "lat": -22.2724,
+      "lng": -46.1672,
+      "cidade_media": "Pouso Alegre (24 km)",
+      "grande_centro": "São José dos Campos (~1h15, 105 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2024,
+      "taxa_homicidios_100k": 5.6,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (6 equipes); estabelecimento de saúde da gestão municipal; pronto-socorro (CNES); farmácia cadastrada no CNES",
+      "educacao": "órgão de educação: Secretaria em conjunto com outras políticas setoriais; conselho municipal de educação; conselho de alimentação escolar",
+      "seguranca": "taxa de homicídios 5.6/100 mil hab. (1 óbito em 2024; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": true,
+        "farmacia": true,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": false,
+      "nota": "IDH 0.730 (Atlas 2010); homicídios 5.6/100 mil (2024); validar comércio e Correios no local"
+    },
+    {
+      "rank": 41,
       "nome": "Iconha",
       "uf": "ES",
       "regiao": "Sudeste",
@@ -1052,7 +1340,7 @@
       "nota": "IDH 0.729 (Atlas 2010); homicídios 7.8/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 33,
+      "rank": 42,
       "nome": "São Lourenço da Serra",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1064,7 +1352,7 @@
       "ibge": "3549953",
       "lat": -23.8491,
       "lng": -46.9417,
-      "cidade_media": "Itapevi (34 km)",
+      "cidade_media": "Embu (24 km)",
       "grande_centro": "Osasco (~30 min, 38 km)",
       "homicidios": 1,
       "homicidios_ano": 2022,
@@ -1084,7 +1372,39 @@
       "nota": "IDH 0.728 (Atlas 2010); homicídios 6.1/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 34,
+      "rank": 43,
+      "nome": "Pardinho",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "pop": 7382,
+      "idh": 0.727,
+      "idh_renda": 0.718,
+      "idh_longev": 0.821,
+      "idh_edu": 0.652,
+      "ibge": "3536109",
+      "lat": -23.0803,
+      "lng": -48.3729,
+      "cidade_media": "Botucatu (22 km)",
+      "grande_centro": "Sorocaba (~1h15, 104 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2024,
+      "taxa_homicidios_100k": 13.5,
+      "saude": "emergência 24h municipal (IBGE MUNIC); estabelecimento de saúde da gestão municipal",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar",
+      "seguranca": "taxa de homicídios 13.5/100 mil hab. (1 óbito em 2024; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.727 (Atlas 2010); homicídios 13.5/100 mil (2024); validar comércio e Correios no local"
+    },
+    {
+      "rank": 44,
       "nome": "Munhoz de Melo",
       "uf": "PR",
       "regiao": "Sul",
@@ -1116,7 +1436,7 @@
       "nota": "IDH 0.726 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 35,
+      "rank": 45,
       "nome": "Garuva",
       "uf": "SC",
       "regiao": "Sul",
@@ -1148,7 +1468,7 @@
       "nota": "IDH 0.725 (Atlas 2010); homicídios 10.2/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 36,
+      "rank": 46,
       "nome": "Florestal",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -1160,7 +1480,7 @@
       "ibge": "3126000",
       "lat": -19.8945,
       "lng": -44.4301,
-      "cidade_media": "Contagem (38 km)",
+      "cidade_media": "Betim (26 km)",
       "grande_centro": "Contagem (~30 min, 38 km)",
       "homicidios": 1,
       "homicidios_ano": 2024,
@@ -1180,7 +1500,7 @@
       "nota": "IDH 0.724 (Atlas 2010); homicídios 11.9/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 37,
+      "rank": 47,
       "nome": "Santa Cecília do Pavão",
       "uf": "PR",
       "regiao": "Sul",
@@ -1212,7 +1532,7 @@
       "nota": "IDH 0.723 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 38,
+      "rank": 48,
       "nome": "Santo Antônio de Goiás",
       "uf": "GO",
       "regiao": "Centro-Oeste",
@@ -1224,7 +1544,7 @@
       "ibge": "5219738",
       "lat": -16.4831,
       "lng": -49.3102,
-      "cidade_media": "Senador Canedo (35 km)",
+      "cidade_media": "Goiânia (22 km)",
       "grande_centro": "Goiânia (~15 min, 22 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -1244,7 +1564,7 @@
       "nota": "IDH 0.723 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 39,
+      "rank": 49,
       "nome": "Sertanópolis",
       "uf": "PR",
       "regiao": "Sul",
@@ -1276,7 +1596,7 @@
       "nota": "IDH 0.723 (Atlas 2010); homicídios 12.4/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 40,
+      "rank": 50,
       "nome": "Engenheiro Paulo de Frontin",
       "uf": "RJ",
       "regiao": "Sudeste",
@@ -1308,7 +1628,39 @@
       "nota": "IDH 0.722 (Atlas 2010); homicídios 7.9/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 41,
+      "rank": 51,
+      "nome": "Uchoa",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "pop": 10627,
+      "idh": 0.721,
+      "idh_renda": 0.708,
+      "idh_longev": 0.823,
+      "idh_edu": 0.644,
+      "ibge": "3555604",
+      "lat": -20.9533,
+      "lng": -49.1777,
+      "cidade_media": "São José do Rio Preto (26 km)",
+      "grande_centro": "São José do Rio Preto (~15 min, 26 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2023,
+      "taxa_homicidios_100k": 9.4,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (4 equipes); estabelecimento de saúde da gestão municipal",
+      "educacao": "órgão de educação: Secretaria em conjunto com outras políticas setoriais; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios 9.4/100 mil hab. (1 óbito em 2023; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.721 (Atlas 2010); homicídios 9.4/100 mil (2023); validar comércio e Correios no local"
+    },
+    {
+      "rank": 52,
       "nome": "Uniflor",
       "uf": "PR",
       "regiao": "Sul",
@@ -1340,7 +1692,7 @@
       "nota": "IDH 0.720 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 42,
+      "rank": 53,
       "nome": "Paraibuna",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1372,7 +1724,7 @@
       "nota": "IDH 0.719 (Atlas 2010); homicídios 11.1/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 43,
+      "rank": 54,
       "nome": "Itobi",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1404,7 +1756,7 @@
       "nota": "IDH 0.717 (Atlas 2010); homicídios 12.2/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 44,
+      "rank": 55,
       "nome": "Balneário Barra do Sul",
       "uf": "SC",
       "regiao": "Sul",
@@ -1416,7 +1768,7 @@
       "ibge": "4202057",
       "lat": -26.4564,
       "lng": -48.6066,
-      "cidade_media": "Jaraguá do Sul (47 km)",
+      "cidade_media": "Joinville (29 km)",
       "grande_centro": "Joinville (~15 min, 29 km)",
       "homicidios": 1,
       "homicidios_ano": 2024,
@@ -1436,7 +1788,7 @@
       "nota": "IDH 0.716 (Atlas 2010); homicídios 6.1/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 45,
+      "rank": 56,
       "nome": "Morungaba",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1448,7 +1800,7 @@
       "ibge": "3532009",
       "lat": -22.881,
       "lng": -46.7913,
-      "cidade_media": "Jundiaí (35 km)",
+      "cidade_media": "Bragança Paulista (27 km)",
       "grande_centro": "Campinas (~15 min, 28 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -1468,7 +1820,7 @@
       "nota": "IDH 0.715 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 46,
+      "rank": 57,
       "nome": "Pedregulho",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1500,7 +1852,7 @@
       "nota": "IDH 0.715 (Atlas 2010); homicídios 12.7/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 47,
+      "rank": 58,
       "nome": "Nipoã",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1532,7 +1884,7 @@
       "nota": "IDH 0.713 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 48,
+      "rank": 59,
       "nome": "Carapebus",
       "uf": "RJ",
       "regiao": "Sudeste",
@@ -1544,7 +1896,7 @@
       "ibge": "3300936",
       "lat": -22.1826,
       "lng": -41.664,
-      "cidade_media": "Rio das Ostras (47 km)",
+      "cidade_media": "Macaé (24 km)",
       "grande_centro": "Campos dos Goytacazes (~45 min, 59 km)",
       "homicidios": 2,
       "homicidios_ano": 2024,
@@ -1564,7 +1916,7 @@
       "nota": "IDH 0.713 (Atlas 2010); homicídios 14.0/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 49,
+      "rank": 60,
       "nome": "Ribeirão Bonito",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1596,7 +1948,7 @@
       "nota": "IDH 0.712 (Atlas 2010); homicídios 9.0/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 50,
+      "rank": 61,
       "nome": "Monteiro Lobato",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1608,7 +1960,7 @@
       "ibge": "3531704",
       "lat": -22.955,
       "lng": -45.8482,
-      "cidade_media": "Taubaté (31 km)",
+      "cidade_media": "São José dos Campos (26 km)",
       "grande_centro": "São José dos Campos (~15 min, 26 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -1628,7 +1980,7 @@
       "nota": "IDH 0.710 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 51,
+      "rank": 62,
       "nome": "Nazário",
       "uf": "GO",
       "regiao": "Centro-Oeste",
@@ -1660,7 +2012,7 @@
       "nota": "IDH 0.710 (Atlas 2010); homicídios 12.0/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 52,
+      "rank": 63,
       "nome": "Alfredo Chaves",
       "uf": "ES",
       "regiao": "Sudeste",
@@ -1692,7 +2044,7 @@
       "nota": "IDH 0.710 (Atlas 2010); homicídios 7.0/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 53,
+      "rank": 64,
       "nome": "São José do Hortêncio",
       "uf": "RS",
       "regiao": "Sul",
@@ -1704,7 +2056,7 @@
       "ibge": "4318481",
       "lat": -29.54,
       "lng": -51.2496,
-      "cidade_media": "Caxias do Sul (42 km)",
+      "cidade_media": "Novo Hamburgo (20 km)",
       "grande_centro": "Porto Alegre (~45 min, 55 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -1724,7 +2076,7 @@
       "nota": "IDH 0.707 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 54,
+      "rank": 65,
       "nome": "Rio Novo",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -1756,7 +2108,7 @@
       "nota": "IDH 0.707 (Atlas 2010); homicídios 11.5/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 55,
+      "rank": 66,
       "nome": "Sarapuí",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1768,7 +2120,7 @@
       "ibge": "3551108",
       "lat": -23.6415,
       "lng": -47.8272,
-      "cidade_media": "Sorocaba (41 km)",
+      "cidade_media": "Itapetininga (23 km)",
       "grande_centro": "Sorocaba (~30 min, 41 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -1788,7 +2140,7 @@
       "nota": "IDH 0.707 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 56,
+      "rank": 67,
       "nome": "Santo Antônio do Pinhal",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1800,7 +2152,7 @@
       "ibge": "3548203",
       "lat": -22.8312,
       "lng": -45.6793,
-      "cidade_media": "São José dos Campos (44 km)",
+      "cidade_media": "Pindamonhangaba (25 km)",
       "grande_centro": "São José dos Campos (~30 min, 44 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -1820,7 +2172,71 @@
       "nota": "IDH 0.706 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 57,
+      "rank": 68,
+      "nome": "Ibiraci",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "pop": 11057,
+      "idh": 0.706,
+      "idh_renda": 0.696,
+      "idh_longev": 0.855,
+      "idh_edu": 0.591,
+      "ibge": "3129707",
+      "lat": -20.4702,
+      "lng": -47.1308,
+      "cidade_media": "Franca (29 km)",
+      "grande_centro": "Ribeirão Preto (~1h15, 106 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2023,
+      "taxa_homicidios_100k": 9.0,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (4 equipes); estabelecimento de saúde da gestão municipal; farmácia cadastrada no CNES",
+      "educacao": "órgão de educação: Secretaria em conjunto com outras políticas setoriais; conselho municipal de educação; conselho de alimentação escolar",
+      "seguranca": "taxa de homicídios 9.0/100 mil hab. (1 óbito em 2023; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": true,
+        "farmacia": true,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": false,
+      "nota": "IDH 0.706 (Atlas 2010); homicídios 9.0/100 mil (2023); validar comércio e Correios no local"
+    },
+    {
+      "rank": 69,
+      "nome": "Cachoeira de Minas",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "pop": 12248,
+      "idh": 0.706,
+      "idh_renda": 0.673,
+      "idh_longev": 0.821,
+      "idh_edu": 0.637,
+      "ibge": "3109709",
+      "lat": -22.354,
+      "lng": -45.7821,
+      "cidade_media": "Pouso Alegre (21 km)",
+      "grande_centro": "São José dos Campos (~1h15, 93 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2023,
+      "taxa_homicidios_100k": 8.2,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (4 equipes); estabelecimento de saúde da gestão municipal; farmácia cadastrada no CNES",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios 8.2/100 mil hab. (1 óbito em 2023; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": true,
+        "farmacia": true,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": false,
+      "nota": "IDH 0.706 (Atlas 2010); homicídios 8.2/100 mil (2023); validar comércio e Correios no local"
+    },
+    {
+      "rank": 70,
       "nome": "Bofete",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1852,7 +2268,7 @@
       "nota": "IDH 0.705 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 58,
+      "rank": 71,
       "nome": "Santa Fé",
       "uf": "PR",
       "regiao": "Sul",
@@ -1884,7 +2300,7 @@
       "nota": "IDH 0.705 (Atlas 2010); homicídios 8.6/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 59,
+      "rank": 72,
       "nome": "Porangaba",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -1916,7 +2332,39 @@
       "nota": "IDH 0.703 (Atlas 2010); homicídios 9.3/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 60,
+      "rank": 73,
+      "nome": "Conceição dos Ouros",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "pop": 11183,
+      "idh": 0.703,
+      "idh_renda": 0.668,
+      "idh_longev": 0.842,
+      "idh_edu": 0.618,
+      "ibge": "3117801",
+      "lat": -22.4175,
+      "lng": -45.7963,
+      "cidade_media": "Pouso Alegre (25 km)",
+      "grande_centro": "São José dos Campos (~1h, 86 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2023,
+      "taxa_homicidios_100k": 8.9,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (4 equipes); estabelecimento de saúde da gestão municipal; UPA no município (CNES); farmácia cadastrada no CNES",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios 8.9/100 mil hab. (1 óbito em 2023; SIM/DATASUS); sem delegacia de polícia civil declarada (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": true,
+        "farmacia": true,
+        "delegacia": false,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.703 (Atlas 2010); homicídios 8.9/100 mil (2023); validar comércio e Correios no local"
+    },
+    {
+      "rank": 74,
       "nome": "Goianápolis",
       "uf": "GO",
       "regiao": "Centro-Oeste",
@@ -1928,7 +2376,7 @@
       "ibge": "5208400",
       "lat": -16.5007,
       "lng": -49.0173,
-      "cidade_media": "Goiânia (32 km)",
+      "cidade_media": "Anápolis (20 km)",
       "grande_centro": "Goiânia (~30 min, 32 km)",
       "homicidios": 2,
       "homicidios_ano": 2024,
@@ -1948,7 +2396,39 @@
       "nota": "IDH 0.703 (Atlas 2010); homicídios 13.7/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 61,
+      "rank": 75,
+      "nome": "São Sebastião da Grama",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "pop": 10484,
+      "idh": 0.701,
+      "idh_renda": 0.689,
+      "idh_longev": 0.82,
+      "idh_edu": 0.609,
+      "ibge": "3550803",
+      "lat": -21.7084,
+      "lng": -46.8241,
+      "cidade_media": "Poços de Caldas (28 km)",
+      "grande_centro": "Ribeirão Preto (~1h30, 117 km)",
+      "homicidios": null,
+      "homicidios_ano": null,
+      "taxa_homicidios_100k": null,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (4 equipes); estabelecimento de saúde da gestão municipal; pronto-socorro (CNES)",
+      "educacao": "órgão de educação: Setor subordinado diretamente  à chefia do Executivo; conselho municipal de educação; conselho de alimentação escolar",
+      "seguranca": "taxa de homicídios não disponível no SIM 2022–2024; delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.701 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
+    },
+    {
+      "rank": 76,
       "nome": "Mário Campos",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -1980,7 +2460,7 @@
       "nota": "IDH 0.699 (Atlas 2010); homicídios 12.1/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 62,
+      "rank": 77,
       "nome": "Araújos",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2012,7 +2492,7 @@
       "nota": "IDH 0.698 (Atlas 2010); homicídios 10.5/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 63,
+      "rank": 78,
       "nome": "Damolândia",
       "uf": "GO",
       "regiao": "Centro-Oeste",
@@ -2044,7 +2524,7 @@
       "nota": "IDH 0.697 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 64,
+      "rank": 79,
       "nome": "Canelinha",
       "uf": "SC",
       "regiao": "Sul",
@@ -2056,7 +2536,7 @@
       "ibge": "4203709",
       "lat": -27.2724,
       "lng": -48.7893,
-      "cidade_media": "São José (39 km)",
+      "cidade_media": "Brusque (23 km)",
       "grande_centro": "Florianópolis (~30 min, 42 km)",
       "homicidios": 1,
       "homicidios_ano": 2022,
@@ -2076,7 +2556,7 @@
       "nota": "IDH 0.697 (Atlas 2010); homicídios 7.5/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 65,
+      "rank": 80,
       "nome": "Fortuna de Minas",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2088,7 +2568,7 @@
       "ibge": "3126406",
       "lat": -19.5639,
       "lng": -44.4434,
-      "cidade_media": "Ribeirão das Neves (44 km)",
+      "cidade_media": "Sete Lagoas (24 km)",
       "grande_centro": "Contagem (~45 min, 58 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -2108,7 +2588,7 @@
       "nota": "IDH 0.696 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 66,
+      "rank": 81,
       "nome": "Balsa Nova",
       "uf": "PR",
       "regiao": "Sul",
@@ -2120,7 +2600,7 @@
       "ibge": "4102307",
       "lat": -25.5785,
       "lng": -49.6318,
-      "cidade_media": "Fazenda Rio Grande (32 km)",
+      "cidade_media": "Araucária (23 km)",
       "grande_centro": "Curitiba (~30 min, 40 km)",
       "homicidios": 1,
       "homicidios_ano": 2024,
@@ -2140,7 +2620,7 @@
       "nota": "IDH 0.696 (Atlas 2010); homicídios 7.2/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 67,
+      "rank": 82,
       "nome": "Elias Fausto",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -2152,7 +2632,7 @@
       "ibge": "3514908",
       "lat": -23.0425,
       "lng": -47.3768,
-      "cidade_media": "Santa Bárbara d'Oeste (32 km)",
+      "cidade_media": "Hortolândia (26 km)",
       "grande_centro": "Campinas (~30 min, 36 km)",
       "homicidios": 1,
       "homicidios_ano": 2024,
@@ -2172,7 +2652,39 @@
       "nota": "IDH 0.695 (Atlas 2010); homicídios 5.5/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 68,
+      "rank": 83,
+      "nome": "Pequeri",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "pop": 3448,
+      "idh": 0.694,
+      "idh_renda": 0.692,
+      "idh_longev": 0.868,
+      "idh_edu": 0.557,
+      "ibge": "3149507",
+      "lat": -21.8369,
+      "lng": -43.1263,
+      "cidade_media": "Juiz de Fora (24 km)",
+      "grande_centro": "Juiz de Fora (~15 min, 24 km)",
+      "homicidios": null,
+      "homicidios_ano": null,
+      "taxa_homicidios_100k": null,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (1 equipes); estabelecimento de saúde da gestão municipal; farmácia cadastrada no CNES",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios não disponível no SIM 2022–2024; sem delegacia de polícia civil declarada (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": true,
+        "farmacia": true,
+        "delegacia": false,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.694 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
+    },
+    {
+      "rank": 84,
       "nome": "Governador Lindenberg",
       "uf": "ES",
       "regiao": "Sudeste",
@@ -2204,7 +2716,71 @@
       "nota": "IDH 0.694 (Atlas 2010); homicídios 8.7/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 69,
+      "rank": 85,
+      "nome": "Muqui",
+      "uf": "ES",
+      "regiao": "Sudeste",
+      "pop": 14213,
+      "idh": 0.694,
+      "idh_renda": 0.673,
+      "idh_longev": 0.802,
+      "idh_edu": 0.619,
+      "ibge": "3203809",
+      "lat": -20.9537,
+      "lng": -41.3462,
+      "cidade_media": "Cachoeiro de Itapemirim (27 km)",
+      "grande_centro": "Campos dos Goytacazes (~1h, 89 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2022,
+      "taxa_homicidios_100k": 7.0,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (5 equipes); estabelecimento de saúde da gestão municipal; farmácia cadastrada no CNES",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios 7.0/100 mil hab. (1 óbito em 2022; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": true,
+        "farmacia": true,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": false,
+      "nota": "IDH 0.694 (Atlas 2010); homicídios 7.0/100 mil (2022); validar comércio e Correios no local"
+    },
+    {
+      "rank": 86,
+      "nome": "São José da Bela Vista",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "pop": 7690,
+      "idh": 0.693,
+      "idh_renda": 0.679,
+      "idh_longev": 0.844,
+      "idh_edu": 0.58,
+      "ibge": "3549508",
+      "lat": -20.5944,
+      "lng": -47.641,
+      "cidade_media": "Franca (26 km)",
+      "grande_centro": "Ribeirão Preto (~45 min, 68 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2024,
+      "taxa_homicidios_100k": 13.0,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (3 equipes); estabelecimento de saúde da gestão municipal; UPA no município (CNES)",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios 13.0/100 mil hab. (1 óbito em 2024; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.693 (Atlas 2010); homicídios 13.0/100 mil (2024); validar comércio e Correios no local"
+    },
+    {
+      "rank": 87,
       "nome": "Brasópolis",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2236,7 +2812,39 @@
       "nota": "IDH 0.692 (Atlas 2010); homicídios 6.9/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 70,
+      "rank": 88,
+      "nome": "Quatis",
+      "uf": "RJ",
+      "regiao": "Sudeste",
+      "pop": 14158,
+      "idh": 0.69,
+      "idh_renda": 0.676,
+      "idh_longev": 0.806,
+      "idh_edu": 0.603,
+      "ibge": "3304128",
+      "lat": -22.4099,
+      "lng": -44.2627,
+      "cidade_media": "Volta Redonda (21 km)",
+      "grande_centro": "Nova Iguaçu (~1h15, 92 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2024,
+      "taxa_homicidios_100k": 7.1,
+      "saude": "Saúde da Família (5 equipes); estabelecimento de saúde da gestão municipal; UPA no município (CNES); farmácia cadastrada no CNES",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios 7.1/100 mil hab. (1 óbito em 2024; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": true,
+        "farmacia": true,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": false,
+      "nota": "IDH 0.690 (Atlas 2010); homicídios 7.1/100 mil (2024); validar comércio e Correios no local"
+    },
+    {
+      "rank": 89,
       "nome": "Carmo da Mata",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2268,7 +2876,7 @@
       "nota": "IDH 0.689 (Atlas 2010); homicídios 8.9/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 71,
+      "rank": 90,
       "nome": "Varjão",
       "uf": "GO",
       "regiao": "Centro-Oeste",
@@ -2300,7 +2908,7 @@
       "nota": "IDH 0.687 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 72,
+      "rank": 91,
       "nome": "Terezópolis de Goiás",
       "uf": "GO",
       "regiao": "Centro-Oeste",
@@ -2312,7 +2920,7 @@
       "ibge": "5221197",
       "lat": -16.479,
       "lng": -49.0918,
-      "cidade_media": "Aparecida de Goiânia (41 km)",
+      "cidade_media": "Anápolis (22 km)",
       "grande_centro": "Goiânia (~15 min, 28 km)",
       "homicidios": 1,
       "homicidios_ano": 2024,
@@ -2332,7 +2940,7 @@
       "nota": "IDH 0.685 (Atlas 2010); homicídios 12.1/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 73,
+      "rank": 92,
       "nome": "Comendador Levy Gasparian",
       "uf": "RJ",
       "regiao": "Sudeste",
@@ -2364,7 +2972,7 @@
       "nota": "IDH 0.685 (Atlas 2010); homicídios 11.1/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 74,
+      "rank": 93,
       "nome": "Areal",
       "uf": "RJ",
       "regiao": "Sudeste",
@@ -2376,7 +2984,7 @@
       "ibge": "3300225",
       "lat": -22.2369,
       "lng": -43.1011,
-      "cidade_media": "Petrópolis (31 km)",
+      "cidade_media": "Teresópolis (24 km)",
       "grande_centro": "Juiz de Fora (~45 min, 59 km)",
       "homicidios": 1,
       "homicidios_ano": 2023,
@@ -2396,7 +3004,7 @@
       "nota": "IDH 0.684 (Atlas 2010); homicídios 8.2/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 75,
+      "rank": 94,
       "nome": "Bonfinópolis",
       "uf": "GO",
       "regiao": "Centro-Oeste",
@@ -2428,7 +3036,7 @@
       "nota": "IDH 0.683 (Atlas 2010); homicídios 9.2/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 76,
+      "rank": 95,
       "nome": "Contenda",
       "uf": "PR",
       "regiao": "Sul",
@@ -2440,7 +3048,7 @@
       "ibge": "4106209",
       "lat": -25.6808,
       "lng": -49.5316,
-      "cidade_media": "São José dos Pinhais (37 km)",
+      "cidade_media": "Fazenda Rio Grande (21 km)",
       "grande_centro": "Curitiba (~30 min, 38 km)",
       "homicidios": 2,
       "homicidios_ano": 2024,
@@ -2460,7 +3068,7 @@
       "nota": "IDH 0.681 (Atlas 2010); homicídios 10.1/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 77,
+      "rank": 96,
       "nome": "Quitandinha",
       "uf": "PR",
       "regiao": "Sul",
@@ -2492,7 +3100,7 @@
       "nota": "IDH 0.680 (Atlas 2010); homicídios 10.6/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 78,
+      "rank": 97,
       "nome": "Araricá",
       "uf": "RS",
       "regiao": "Sul",
@@ -2504,7 +3112,7 @@
       "ibge": "4300877",
       "lat": -29.6172,
       "lng": -50.9257,
-      "cidade_media": "Gravataí (37 km)",
+      "cidade_media": "Novo Hamburgo (21 km)",
       "grande_centro": "Porto Alegre (~45 min, 54 km)",
       "homicidios": 1,
       "homicidios_ano": 2024,
@@ -2524,7 +3132,7 @@
       "nota": "IDH 0.679 (Atlas 2010); homicídios 11.4/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 79,
+      "rank": 98,
       "nome": "Nazaré Paulista",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -2536,7 +3144,7 @@
       "ibge": "3532405",
       "lat": -23.1787,
       "lng": -46.4026,
-      "cidade_media": "Itaquaquecetuba (34 km)",
+      "cidade_media": "Bragança Paulista (29 km)",
       "grande_centro": "Guarulhos (~30 min, 35 km)",
       "homicidios": 2,
       "homicidios_ano": 2024,
@@ -2556,7 +3164,7 @@
       "nota": "IDH 0.678 (Atlas 2010); homicídios 10.7/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 80,
+      "rank": 99,
       "nome": "Itatiaiuçu",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2588,7 +3196,7 @@
       "nota": "IDH 0.677 (Atlas 2010); homicídios 14.7/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 81,
+      "rank": 100,
       "nome": "Pedralva",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2620,7 +3228,7 @@
       "nota": "IDH 0.675 (Atlas 2010); homicídios 9.2/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 82,
+      "rank": 101,
       "nome": "Rio Acima",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2632,7 +3240,7 @@
       "ibge": "3154804",
       "lat": -20.0951,
       "lng": -43.7909,
-      "cidade_media": "Contagem (33 km)",
+      "cidade_media": "Belo Horizonte (23 km)",
       "grande_centro": "Belo Horizonte (~15 min, 23 km)",
       "homicidios": null,
       "homicidios_ano": null,
@@ -2652,7 +3260,7 @@
       "nota": "IDH 0.673 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 83,
+      "rank": 102,
       "nome": "Baldim",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2684,7 +3292,7 @@
       "nota": "IDH 0.671 (Atlas 2010); homicídios 13.1/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 84,
+      "rank": 103,
       "nome": "Veríssimo",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2716,7 +3324,7 @@
       "nota": "IDH 0.667 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 85,
+      "rank": 104,
       "nome": "Jaraguari",
       "uf": "MS",
       "regiao": "Centro-Oeste",
@@ -2748,7 +3356,7 @@
       "nota": "IDH 0.664 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 86,
+      "rank": 105,
       "nome": "Toledo",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2760,7 +3368,7 @@
       "ibge": "3169109",
       "lat": -22.7434,
       "lng": -46.379,
-      "cidade_media": "Atibaia (45 km)",
+      "cidade_media": "Bragança Paulista (29 km)",
       "grande_centro": "São José dos Campos (~1h, 70 km)",
       "homicidios": 1,
       "homicidios_ano": 2023,
@@ -2780,7 +3388,7 @@
       "nota": "IDH 0.661 (Atlas 2010); homicídios 13.3/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 87,
+      "rank": 106,
       "nome": "Agudos do Sul",
       "uf": "PR",
       "regiao": "Sul",
@@ -2812,7 +3420,71 @@
       "nota": "IDH 0.660 (Atlas 2010); homicídios 9.4/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 88,
+      "rank": 107,
+      "nome": "Duas Barras",
+      "uf": "RJ",
+      "regiao": "Sudeste",
+      "pop": 11354,
+      "idh": 0.659,
+      "idh_renda": 0.677,
+      "idh_longev": 0.79,
+      "idh_edu": 0.534,
+      "ibge": "3301603",
+      "lat": -22.0589,
+      "lng": -42.5151,
+      "cidade_media": "Nova Friburgo (25 km)",
+      "grande_centro": "Juiz de Fora (~1h15, 92 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2023,
+      "taxa_homicidios_100k": 8.8,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (2 equipes); estabelecimento de saúde da gestão municipal; farmácia cadastrada no CNES",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios 8.8/100 mil hab. (1 óbito em 2023; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": true,
+        "farmacia": true,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": false,
+      "nota": "IDH 0.659 (Atlas 2010); homicídios 8.8/100 mil (2023); validar comércio e Correios no local"
+    },
+    {
+      "rank": 108,
+      "nome": "Terenos",
+      "uf": "MS",
+      "regiao": "Centro-Oeste",
+      "pop": 18139,
+      "idh": 0.658,
+      "idh_renda": 0.651,
+      "idh_longev": 0.839,
+      "idh_edu": 0.521,
+      "ibge": "5008008",
+      "lat": -20.4423,
+      "lng": -54.8656,
+      "cidade_media": "Campo Grande (26 km)",
+      "grande_centro": "Campo Grande (~15 min, 26 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2024,
+      "taxa_homicidios_100k": 5.5,
+      "saude": "emergência 24h municipal (IBGE MUNIC); estabelecimento de saúde da gestão municipal; UPA no município (CNES)",
+      "educacao": "órgão de educação: Secretaria em conjunto com outras políticas setoriais; conselho de alimentação escolar; demanda de pré-escola mapeada",
+      "seguranca": "taxa de homicídios 5.5/100 mil hab. (1 óbito em 2024; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": false,
+        "farmacia": false,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.658 (Atlas 2010); homicídios 5.5/100 mil (2024); validar comércio e Correios no local"
+    },
+    {
+      "rank": 109,
       "nome": "Cordisburgo",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2844,7 +3516,7 @@
       "nota": "IDH 0.656 (Atlas 2010); homicídios 13.2/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 89,
+      "rank": 110,
       "nome": "Santo Antônio do Leverger",
       "uf": "MT",
       "regiao": "Centro-Oeste",
@@ -2856,7 +3528,7 @@
       "ibge": "5107800",
       "lat": -15.8692,
       "lng": -56.0942,
-      "cidade_media": "Cuiabá (33 km)",
+      "cidade_media": "Várzea Grande (24 km)",
       "grande_centro": "Cuiabá (~30 min, 33 km)",
       "homicidios": 2,
       "homicidios_ano": 2024,
@@ -2876,7 +3548,7 @@
       "nota": "IDH 0.656 (Atlas 2010); homicídios 11.9/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 90,
+      "rank": 111,
       "nome": "Natividade da Serra",
       "uf": "SP",
       "regiao": "Sudeste",
@@ -2908,7 +3580,7 @@
       "nota": "IDH 0.655 (Atlas 2010); homicídios 14.0/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 91,
+      "rank": 112,
       "nome": "Taquaraçu de Minas",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -2940,7 +3612,39 @@
       "nota": "IDH 0.651 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 92,
+      "rank": 113,
+      "nome": "Igaratinga",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "pop": 11252,
+      "idh": 0.651,
+      "idh_renda": 0.682,
+      "idh_longev": 0.842,
+      "idh_edu": 0.481,
+      "ibge": "3130200",
+      "lat": -19.9539,
+      "lng": -44.7005,
+      "cidade_media": "Divinópolis (29 km)",
+      "grande_centro": "Contagem (~45 min, 66 km)",
+      "homicidios": null,
+      "homicidios_ano": null,
+      "taxa_homicidios_100k": null,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (5 equipes); estabelecimento de saúde da gestão municipal; UPA no município (CNES); farmácia cadastrada no CNES",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar",
+      "seguranca": "taxa de homicídios não disponível no SIM 2022–2024; sem delegacia de polícia civil declarada (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": true,
+        "farmacia": true,
+        "delegacia": false,
+        "correios": true
+      },
+      "hidden": true,
+      "nota": "IDH 0.651 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
+    },
+    {
+      "rank": 114,
       "nome": "Cardoso Moreira",
       "uf": "RJ",
       "regiao": "Sudeste",
@@ -2972,7 +3676,7 @@
       "nota": "IDH 0.648 (Atlas 2010); homicídios 7.5/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 93,
+      "rank": 115,
       "nome": "Bonfim",
       "uf": "MG",
       "regiao": "Sudeste",
@@ -3004,7 +3708,7 @@
       "nota": "IDH 0.637 (Atlas 2010); taxa de homicídios indisponível no SIM 2022–2024; validar comércio e Correios no local"
     },
     {
-      "rank": 94,
+      "rank": 116,
       "nome": "Tijucas do Sul",
       "uf": "PR",
       "regiao": "Sul",
@@ -3036,7 +3740,7 @@
       "nota": "IDH 0.636 (Atlas 2010); homicídios 10.9/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 95,
+      "rank": 117,
       "nome": "Palmácia",
       "uf": "CE",
       "regiao": "Nordeste",
@@ -3068,7 +3772,7 @@
       "nota": "IDH 0.622 (Atlas 2010); homicídios 9.7/100 mil (2022); validar comércio e Correios no local"
     },
     {
-      "rank": 96,
+      "rank": 118,
       "nome": "Ferreiros",
       "uf": "PE",
       "regiao": "Nordeste",
@@ -3100,7 +3804,7 @@
       "nota": "IDH 0.622 (Atlas 2010); homicídios 12.7/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 97,
+      "rank": 119,
       "nome": "Tamarana",
       "uf": "PR",
       "regiao": "Sul",
@@ -3132,7 +3836,7 @@
       "nota": "IDH 0.621 (Atlas 2010); homicídios 9.4/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 98,
+      "rank": 120,
       "nome": "Arês",
       "uf": "RN",
       "regiao": "Nordeste",
@@ -3164,7 +3868,7 @@
       "nota": "IDH 0.606 (Atlas 2010); homicídios 14.6/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 99,
+      "rank": 121,
       "nome": "Colares",
       "uf": "PA",
       "regiao": "Norte",
@@ -3196,7 +3900,7 @@
       "nota": "IDH 0.602 (Atlas 2010); homicídios 14.8/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 100,
+      "rank": 122,
       "nome": "Alagoinha",
       "uf": "PB",
       "regiao": "Nordeste",
@@ -3228,7 +3932,7 @@
       "nota": "IDH 0.595 (Atlas 2010); homicídios 14.2/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 101,
+      "rank": 123,
       "nome": "Teodoro Sampaio",
       "uf": "BA",
       "regiao": "Nordeste",
@@ -3260,7 +3964,7 @@
       "nota": "IDH 0.594 (Atlas 2010); homicídios 13.7/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 102,
+      "rank": 124,
       "nome": "Terra Nova",
       "uf": "BA",
       "regiao": "Nordeste",
@@ -3292,7 +3996,7 @@
       "nota": "IDH 0.578 (Atlas 2010); homicídios 9.1/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 103,
+      "rank": 125,
       "nome": "Capela",
       "uf": "AL",
       "regiao": "Nordeste",
@@ -3324,7 +4028,7 @@
       "nota": "IDH 0.573 (Atlas 2010); homicídios 13.3/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 104,
+      "rank": 126,
       "nome": "Cumaru",
       "uf": "PE",
       "regiao": "Nordeste",
@@ -3356,7 +4060,39 @@
       "nota": "IDH 0.572 (Atlas 2010); homicídios 6.2/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 105,
+      "rank": 127,
+      "nome": "Serra Redonda",
+      "uf": "PB",
+      "regiao": "Nordeste",
+      "pop": 6984,
+      "idh": 0.57,
+      "idh_renda": 0.565,
+      "idh_longev": 0.772,
+      "idh_edu": 0.424,
+      "ibge": "2515807",
+      "lat": -7.1825,
+      "lng": -35.6743,
+      "cidade_media": "Campina Grande (24 km)",
+      "grande_centro": "João Pessoa (~1h, 88 km)",
+      "homicidios": 1,
+      "homicidios_ano": 2024,
+      "taxa_homicidios_100k": 14.3,
+      "saude": "emergência 24h municipal (IBGE MUNIC); Saúde da Família (4 equipes); estabelecimento de saúde da gestão municipal; farmácia cadastrada no CNES",
+      "educacao": "órgão de educação: Secretaria exclusiva; conselho municipal de educação; conselho de alimentação escolar",
+      "seguranca": "taxa de homicídios 14.3/100 mil hab. (1 óbito em 2024; SIM/DATASUS); delegacia de polícia civil (MUNIC 2023)",
+      "infra": {
+        "upa_ou_emergencia_24h": true,
+        "escola": true,
+        "mercado": true,
+        "farmacia": true,
+        "delegacia": true,
+        "correios": true
+      },
+      "hidden": false,
+      "nota": "IDH 0.570 (Atlas 2010); homicídios 14.3/100 mil (2024); validar comércio e Correios no local"
+    },
+    {
+      "rank": 128,
       "nome": "Taipu",
       "uf": "RN",
       "regiao": "Nordeste",
@@ -3388,7 +4124,7 @@
       "nota": "IDH 0.569 (Atlas 2010); homicídios 8.5/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 106,
+      "rank": 129,
       "nome": "Espírito Santo",
       "uf": "RN",
       "regiao": "Nordeste",
@@ -3420,7 +4156,7 @@
       "nota": "IDH 0.558 (Atlas 2010); homicídios 9.1/100 mil (2023); validar comércio e Correios no local"
     },
     {
-      "rank": 107,
+      "rank": 130,
       "nome": "Água Fria",
       "uf": "BA",
       "regiao": "Nordeste",
@@ -3452,7 +4188,7 @@
       "nota": "IDH 0.550 (Atlas 2010); homicídios 6.7/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 108,
+      "rank": 131,
       "nome": "São Miguel de Taipu",
       "uf": "PB",
       "regiao": "Nordeste",
@@ -3464,7 +4200,7 @@
       "ibge": "2515005",
       "lat": -7.2492,
       "lng": -35.2105,
-      "cidade_media": "João Pessoa (39 km)",
+      "cidade_media": "Santa Rita (30 km)",
       "grande_centro": "João Pessoa (~30 min, 39 km)",
       "homicidios": 1,
       "homicidios_ano": 2024,
@@ -3484,7 +4220,7 @@
       "nota": "IDH 0.548 (Atlas 2010); homicídios 13.7/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 109,
+      "rank": 132,
       "nome": "Correntes",
       "uf": "PE",
       "regiao": "Nordeste",
@@ -3516,7 +4252,7 @@
       "nota": "IDH 0.536 (Atlas 2010); homicídios 11.3/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 110,
+      "rank": 133,
       "nome": "Marcação",
       "uf": "PB",
       "regiao": "Nordeste",
@@ -3548,7 +4284,7 @@
       "nota": "IDH 0.529 (Atlas 2010); homicídios 10.6/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 111,
+      "rank": 134,
       "nome": "Flexeiras",
       "uf": "AL",
       "regiao": "Nordeste",
@@ -3580,7 +4316,7 @@
       "nota": "IDH 0.527 (Atlas 2010); homicídios 10.2/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 112,
+      "rank": 135,
       "nome": "Lamarão",
       "uf": "BA",
       "regiao": "Nordeste",
@@ -3612,7 +4348,7 @@
       "nota": "IDH 0.518 (Atlas 2010); homicídios 10.7/100 mil (2024); validar comércio e Correios no local"
     },
     {
-      "rank": 113,
+      "rank": 136,
       "nome": "Casserengue",
       "uf": "PB",
       "regiao": "Nordeste",

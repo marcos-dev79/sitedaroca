@@ -18,7 +18,7 @@ CACHE = ROOT / "data" / "cache"
 MAX_CANDIDATES = 1000
 MAX_POP = 20_000
 MEDIUM_MIN_POP = 150_000
-MEDIUM_MIN_KM = 30
+MEDIUM_MIN_KM = 20
 MEDIUM_MAX_KM = 50
 LARGE_MIN_POP = 500_000
 DRIVE_KMH = 80
@@ -328,7 +328,7 @@ def main():
             "titulo": f"{len(entries)} cidadezinhas para dev remoto na roça",
             "criterios": [
                 "Até 20 mil habitantes (IBGE 2024)",
-                "Entre 30 e 50 km de cidade média (≥150 mil hab.)",
+                "Entre 20 e 50 km de cidade média (≥150 mil hab.)",
                 "Até 1h30 de cidade grande (≥500 mil hab.; ~120 km a 80 km/h)",
                 "UPA no CNES (tipo 73) ou emergência 24h municipal (MUNIC 2021 MSAU451)",
                 "Escola: estrutura educacional municipal (MUNIC 2021)",

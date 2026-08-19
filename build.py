@@ -81,7 +81,7 @@ def build_index(stats: dict, cities: list, css_href: str, js_href: str) -> str:
 
   <header class="map-header">
     <h1>Top {stats["total"]} Cidadezinhas para Dev Remoto na Roça</h1>
-    <p>Até 20 mil hab., 30–50 km de cidade média (≥150 mil), até 1h30 de cidade grande (≥500 mil). UPA/emergência no conjunto. Homicídios ≤ 15/100 mil. Ordenado por IDH. Marque um serviço para exigir que a cidade o tenha.</p>
+    <p>Até 20 mil hab., 20–50 km de cidade média (≥150 mil), até 1h30 de cidade grande (≥500 mil). UPA/emergência no conjunto. Homicídios ≤ 15/100 mil. Ordenado por IDH. Marque um serviço para exigir que a cidade o tenha.</p>
     <div class="map-stats">
       <span class="stat">Total: {stats["total"]}</span>
       <span class="stat">Visíveis: <span id="visible-count">{stats["total"]}</span></span>
