@@ -99,7 +99,6 @@ def build_index(stats: dict, cities: list, crime_zones: list, css_href: str, js_
     <p>Até 20 mil hab., 20–50 km de cidade média (≥150 mil), até 1h30 de cidade grande (≥500 mil). UPA/emergência no conjunto. Homicídios ≤ 15/100 mil. Ordenado por IDH. Marque um serviço para exigir que a cidade o tenha.</p>
     <div class="map-stats">
       <span class="stat">Total: {stats["total"]}</span>
-      <span class="stat">Visíveis: <span id="visible-count">{stats["total"]}</span></span>
       <span class="stat">Sul/Sudeste: {stats["ss"]}</span>
       <span class="stat">CO: {stats["co"]}</span>
       <span class="stat">NE: {stats["ne"]}</span>
@@ -111,43 +110,80 @@ def build_index(stats: dict, cities: list, crime_zones: list, css_href: str, js_
   <div class="map-wrap">
     <div id="map-loading" class="map-loading">Carregando mapa…</div>
     <div id="map"></div>
-    <div class="map-controls" id="map-controls">
-      <span class="filter-peek">Filtros</span>
-      <div class="map-controls-body">
-        <input type="search" id="search" placeholder="Buscar cidade, UF ou região…" aria-label="Buscar cidade">
-        <div class="filter-chips">
-          <button class="chip active" data-regiao="all" type="button">Todas</button>
-          <button class="chip" data-regiao="Sudeste" type="button">Sudeste</button>
-          <button class="chip" data-regiao="Sul" type="button">Sul</button>
-          <button class="chip" data-regiao="Centro-Oeste" type="button">Centro-Oeste</button>
-          <button class="chip" data-regiao="Nordeste" type="button">Nordeste</button>
-          <button class="chip" data-regiao="Norte" type="button">Norte</button>
-        </div>
-        <div class="filter-chips" role="group" aria-label="Altitude">
-          <button class="chip active" data-alt="0" type="button">0 m</button>
-          <button class="chip" data-alt="300" type="button">&gt; 300 m</button>
-          <button class="chip" data-alt="500" type="button">&gt; 500 m</button>
-          <button class="chip" data-alt="1000" type="button">&gt; 1000 m</button>
-        </div>
-        <div class="infra-filters" role="group" aria-label="Serviços no município">
-          <label><input type="checkbox" data-infra="upa_ou_emergencia_24h" checked> UPA / emergência</label>
-          <label><input type="checkbox" data-infra="escola"> Escola</label>
-          <label><input type="checkbox" data-infra="mercado"> Mercado</label>
-          <label><input type="checkbox" data-infra="farmacia"> Farmácia</label>
-          <label><input type="checkbox" data-infra="delegacia"> Delegacia</label>
-          <label><input type="checkbox" data-infra="correios"> Correios</label>
-        </div>
-        <button class="chip chip-crime" id="toggle-crime" type="button" aria-pressed="false">Zonas de Crime</button>
+    <aside class="map-sidebar" id="map-controls" aria-label="Filtros do mapa">
+      <div class="sidebar-header">
+        <strong>Filtros</strong>
+        <button class="sidebar-close" id="sidebar-close" type="button" aria-label="Recolher filtros">✕</button>
       </div>
-    </div>
-    <div class="map-legend">
-      <div><span style="background:#16a34a"></span>Sudeste</div>
-      <div><span style="background:#2563eb"></span>Sul</div>
-      <div><span style="background:#ca8a04"></span>Centro-Oeste</div>
-      <div><span style="background:#dc2626"></span>Nordeste</div>
-      <div><span style="background:#9333ea"></span>Norte</div>
-      <div class="legend-crime"><span class="legend-burst"></span>Zonas de crime</div>
-    </div>
+      <div class="sidebar-body">
+        <input type="search" id="search" placeholder="Buscar cidade, UF ou região…" aria-label="Buscar cidade">
+
+        <div class="filter-group">
+          <span class="filter-label" id="label-regiao">Região</span>
+          <div class="filter-chips" role="group" aria-labelledby="label-regiao">
+            <button class="chip active" data-regiao="all" type="button">Todas</button>
+            <button class="chip" data-regiao="Sudeste" type="button">Sudeste</button>
+            <button class="chip" data-regiao="Sul" type="button">Sul</button>
+            <button class="chip" data-regiao="Centro-Oeste" type="button">Centro-Oeste</button>
+            <button class="chip" data-regiao="Nordeste" type="button">Nordeste</button>
+            <button class="chip" data-regiao="Norte" type="button">Norte</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label" id="label-altitude">Altitude mínima</span>
+          <div class="filter-chips" role="group" aria-labelledby="label-altitude">
+            <button class="chip active" data-alt="0" type="button" aria-pressed="true">0 m</button>
+            <button class="chip" data-alt="300" type="button" aria-pressed="false">&gt; 300 m</button>
+            <button class="chip" data-alt="500" type="button" aria-pressed="false">&gt; 500 m</button>
+            <button class="chip" data-alt="1000" type="button" aria-pressed="false">&gt; 1000 m</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label" id="label-infra">Serviços exigidos</span>
+          <div class="infra-filters" role="group" aria-labelledby="label-infra">
+            <label><input type="checkbox" data-infra="upa_ou_emergencia_24h" checked> 🏥 UPA / emergência</label>
+            <label><input type="checkbox" data-infra="escola"> 🏫 Escola</label>
+            <label><input type="checkbox" data-infra="mercado"> 🛒 Mercado</label>
+            <label><input type="checkbox" data-infra="farmacia"> 💊 Farmácia</label>
+            <label><input type="checkbox" data-infra="delegacia"> 🚓 Delegacia</label>
+            <label><input type="checkbox" data-infra="correios"> 📮 Correios</label>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label" id="label-cor">Colorir pinos por</span>
+          <div class="filter-chips" role="group" aria-labelledby="label-cor">
+            <button class="chip active" data-cor="regiao" type="button" aria-pressed="true">Região</button>
+            <button class="chip" data-cor="idh" type="button" aria-pressed="false">IDH</button>
+            <button class="chip" data-cor="violencia" type="button" aria-pressed="false">Violência</button>
+          </div>
+        </div>
+
+        <button class="chip chip-crime" id="toggle-crime" type="button" aria-pressed="false">Zonas de Crime</button>
+
+        <div class="sidebar-footer">
+          <p class="result-count" role="status">
+            <strong id="visible-count">{stats["total"]}</strong> de
+            <span id="total-count">{stats["total"]}</span> cidades no mapa
+          </p>
+          <p class="empty-state" id="empty-state" hidden>
+            Nenhuma cidade atende a todos os filtros. Desmarque um serviço ou volte para “Todas” as regiões.
+          </p>
+          <div class="sidebar-actions">
+            <button class="btn-mini" id="clear-filters" type="button">Limpar filtros</button>
+            <button class="btn-mini" id="copy-link" type="button">Copiar link</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <button class="sidebar-toggle" id="sidebar-toggle" type="button"
+            aria-controls="map-controls" aria-expanded="true">
+      <span aria-hidden="true">☰</span> Filtros
+    </button>
+
+    <div class="map-legend" id="map-legend"></div>
   </div>
 
   {footer(stats["total"])}
