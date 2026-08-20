@@ -117,6 +117,23 @@ python3 rebuild_zonas_crime.py   # atualiza data/zonas-crime.json
 python3 gerar-imagem-sp.py       # PNG estático com cidades de SP
 ```
 
+## Compartilhar uma busca
+
+Os filtros do mapa vivem na URL, então qualquer combinação é um link. O botão
+**Copiar link** na barra de filtros copia o endereço do estado atual.
+
+| Parâmetro | Valores | Exemplo |
+| --- | --- | --- |
+| `regiao` | `all`, `Sudeste`, `Sul`, `Centro-Oeste`, `Nordeste`, `Norte` | `?regiao=Sul` |
+| `alt` | `0`, `300`, `500`, `1000` (altitude mínima em metros) | `?alt=500` |
+| `infra` | chaves de `infra` separadas por vírgula (vazio = não exigir nada) | `?infra=upa_ou_emergencia_24h,farmacia` |
+| `cor` | `regiao`, `idh`, `violencia` | `?cor=idh` |
+| `q` | texto livre da busca | `?q=serra` |
+| `cidade` | código IBGE — abre o popup daquele município | `?cidade=3519055` |
+
+Parâmetros ausentes caem no padrão (todas as regiões e altitudes, só UPA exigida, cor por
+região). Valores desconhecidos são ignorados em vez de quebrar o mapa.
+
 ## Licença
 
 Conteúdo e dados compilados para uso informativo. População, UPA, IDH e infraestrutura mudam — valide sempre no local antes de decidir.
